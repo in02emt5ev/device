@@ -203,3 +203,15 @@ body {
   line-height: 19px;
   color: #000000;
 }
+
+.product__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  letter-spacing: -0.02em;
+}
+
+.product__price {
+  line-height: 21px;
+}
