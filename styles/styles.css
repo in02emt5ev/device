@@ -170,3 +170,10 @@ body {
 
   background-color: #444444;
 }
+
+.breadcrumb {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  text-decoration: none;
+}
