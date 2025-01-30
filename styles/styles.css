@@ -187,3 +187,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
+
+.group-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  letter-spacing: -0.02em;
+}
