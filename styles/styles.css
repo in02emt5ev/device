@@ -32,6 +32,27 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  font-family: "Rubik", "Arial", "Helvetica" sans-serif;
+  font-family: "Rubik", "Arial", "Helvetica", sans-serif;
   color: #444444;
+}
+
+.menu-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav-link {
+  font-weight: 800;
+  font-family: "Raleway", "Arial", "Helvetica", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+}
+
+.sub-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  text-decoration: none;
 }
