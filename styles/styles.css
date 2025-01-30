@@ -64,3 +64,15 @@ body {
   font-family: "Raleway", "Arial", "Helvetica", sans-serif;
   color: #000000;
 }
+
+.btn {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "Raleway", "Arial", "Helvetica", sans-serif;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+}
