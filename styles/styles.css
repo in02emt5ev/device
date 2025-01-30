@@ -140,6 +140,10 @@ body {
   line-height: 30px;
 }
 
+.address {
+  font-style: normal;
+}
+
 .phone-link {
   font-weight: 400;
   font-size: 18px;
