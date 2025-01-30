@@ -177,3 +177,13 @@ body {
   color: #000000;
   text-decoration: none;
 }
+
+.filter-title {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "Raleway", "Arial", "Helvetica", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
