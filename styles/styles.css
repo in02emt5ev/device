@@ -49,6 +49,10 @@ body {
   padding: 0;
 }
 
+.page-container_catalog {
+  width: 1040px;
+}
+
 .page-nav {
   width: 1040px;
   margin: 0 auto;
@@ -391,6 +395,16 @@ body {
 .credit {
   width: 115px;
   height: 33px;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs li:not(:last-child) {
+  margin-right: 36px;
 }
 
 .breadcrumb {
