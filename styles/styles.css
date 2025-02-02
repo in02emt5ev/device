@@ -54,6 +54,14 @@ body {
   opacity: 0.3;
 }
 
+.search-submit {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: inherit;
+  text-align: center;
+}
+
 .menu-link {
   color: #000000;
   text-decoration: none;
