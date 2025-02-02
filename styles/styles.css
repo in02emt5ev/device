@@ -43,6 +43,12 @@ body {
   color: #444444;
 }
 
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .page-nav {
   width: 1040px;
   margin: 0 auto;
