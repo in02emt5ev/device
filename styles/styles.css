@@ -44,6 +44,10 @@ body {
 }
 
 .page-nav {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 0 60px;
+
   background-image: linear-gradient(#ffffff 18%, #ffe17f 18%);
 }
 
