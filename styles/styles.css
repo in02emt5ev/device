@@ -231,6 +231,11 @@ body {
   color: #000000;
 }
 
+.select-control {
+  font: inherit;
+  color: #000000;
+}
+
 .product__title {
   font-weight: 700;
   font-size: 18px;
