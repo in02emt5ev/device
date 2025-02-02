@@ -40,6 +40,10 @@ body {
   background-image: linear-gradient(#ffffff 18%, #ffe17f 18%);
 }
 
+.slider {
+  background-image: linear-gradient(#ffe17f 24%, #ffffff 24%);
+}
+
 .search-field {
   font-weight: 400;
   font-size: 16px;
