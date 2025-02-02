@@ -173,6 +173,15 @@ body {
   color: inherit;
 }
 
+.mailing-field {
+  font: inherit;
+  color: #444444;
+}
+
+.mailing-field::placeholder {
+  opacity: 0.5;
+}
+
 .mailing-submit {
   font-weight: 800;
   font-size: 18px;
