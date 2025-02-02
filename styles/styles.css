@@ -258,6 +258,10 @@ body {
   color: #000000;
 }
 
+.products {
+  background-color: #ffffff;
+}
+
 .product__title {
   font-weight: 700;
   font-size: 18px;
@@ -280,6 +284,9 @@ body {
   letter-spacing: 0.2em;
 }
 
+.pagination {
+  background-color: #f0f0f0;
+}
 
 .pagination-btn {
   font-weight: 800;
