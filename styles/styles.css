@@ -186,6 +186,13 @@ body {
   color: #000000;
 }
 
+.favourites-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
 .category {
   font-weight: 800;
   font-size: 18px;
