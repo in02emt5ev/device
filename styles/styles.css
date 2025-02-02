@@ -261,6 +261,21 @@ body {
   background-color: #f0f0f0;
 }
 
+.index-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.about {
+  width: 520px;
+}
+
+.contacts {
+  width: 532px;
+}
+
 .delivery-list {
   font-weight: 700;
   font-size: 18px;
