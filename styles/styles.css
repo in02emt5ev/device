@@ -418,6 +418,22 @@ body {
   background-color: #f0f0f0;
 }
 
+.catalog-columns {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.filters {
+  width: 200px;
+  padding: 0 60px;
+}
+
+.catalog-right-column {
+  flex-grow: 1;
+}
+
 .filter-title {
   font-weight: 800;
   font-size: 16px;
