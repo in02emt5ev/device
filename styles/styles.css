@@ -187,6 +187,10 @@ body {
   color: inherit;
 }
 
+.mailing {
+  background-color: #f0f0f0;
+}
+
 .mailing-field {
   font: inherit;
   color: #444444;
