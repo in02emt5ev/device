@@ -244,6 +244,10 @@ body {
 }
 
 .delivery-link {
+  display: block;
+  width: 1160px;
+  margin: 0 auto;
+
   font-weight: 800;
   font-size: 20px;
   line-height: 24px;
