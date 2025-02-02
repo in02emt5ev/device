@@ -158,6 +158,8 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
+
+  background-color: #f0f0f0;
 }
 
 .delivery-list {
