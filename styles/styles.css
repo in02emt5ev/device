@@ -207,6 +207,30 @@ body {
   background-image: linear-gradient(#ffffff 26%, #f0f0f0 26%);
 }
 
+.services-wrapper {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.services-tabs {
+  width: 280px;
+  margin: 0;
+  padding: 0;
+
+  border-right: 7px solid #000000;
+}
+
+.services-panels {
+  margin: 0;
+  padding: 0;
+}
+
+.services-panel {
+  padding-left: 116px;
+}
+
 .services-tab {
   font-weight: 800;
   font-size: 18px;
