@@ -132,6 +132,10 @@ body {
   letter-spacing: -0.02em;
 }
 
+.services {
+  background-image: linear-gradient(#ffffff 26%, #f0f0f0 26%);
+}
+
 .services-tab {
   font-weight: 800;
   font-size: 18px;
