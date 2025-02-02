@@ -305,6 +305,28 @@ body {
   background-color: #f0f0f0;
 }
 
+.mailing__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.mailing__title {
+  width: 348px;
+}
+
+.mailing__description {
+  width: 560px;
+}
+
+.mailing-form {
+  width: 810px;
+}
+
 .mailing-field {
   font: inherit;
   color: #444444;
