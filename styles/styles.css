@@ -352,6 +352,47 @@ body {
   background-color: #444444;
 }
 
+.page-footer__middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__address {
+  width: 236px;
+
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 444px;
+}
+
+.page-footer__phone {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: inherit;
+}
+
+.page-footer__social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.credit {
+  width: 115px;
+  height: 33px;
+}
+
 .breadcrumb {
   font-size: 16px;
   line-height: 19px;
