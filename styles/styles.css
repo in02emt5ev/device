@@ -108,6 +108,19 @@ body {
   opacity: 0.3;
 }
 
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu li:not(:last-child) {
+  margin-right: 45px;
+}
+
+.nav-menu li:first-child {
+  width: 293px;
+  margin-right: auto;
+}
+
 .nav-link {
   font-weight: 800;
   font-family: "Raleway", "Arial", "Helvetica", sans-serif;
