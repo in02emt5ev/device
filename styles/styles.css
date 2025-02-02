@@ -56,6 +56,15 @@ body {
   padding: 0;
 }
 
+.user-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-form {
+  width: 517px;
+}
+
 .search-field {
   font-weight: 400;
   font-size: 16px;
@@ -80,6 +89,14 @@ body {
   line-height: 20px;
   font-family: inherit;
   text-align: center;
+}
+
+.user-menu {
+  width: 231px;
+}
+
+.action-menu {
+  width: 241px;
 }
 
 .menu-link {
