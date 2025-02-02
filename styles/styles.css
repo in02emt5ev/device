@@ -282,6 +282,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+
+  background-color: #ffffff;
 }
 
 .pagination {
