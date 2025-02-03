@@ -211,11 +211,8 @@ body {
   background-image: linear-gradient(#ffffff 26%, #f0f0f0 26%);
 }
 
-.services-wrapper {
+.services-layout {
   display: flex;
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0;
 }
 
 .services-tabs {
@@ -265,11 +262,9 @@ body {
   background-color: #f0f0f0;
 }
 
-.index-wrapper {
+.columns-layout {
   display: flex;
   justify-content: space-between;
-  width: 1160px;
-  margin: 0 auto;
 }
 
 .about {
@@ -309,14 +304,11 @@ body {
   background-color: #f0f0f0;
 }
 
-.mailing__wrapper {
+.mailing-layout {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0;
 }
 
 .mailing__title {
@@ -416,13 +408,6 @@ body {
 
 .catalog-wrapper {
   background-color: #f0f0f0;
-}
-
-.catalog-columns {
-  display: flex;
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0;
 }
 
 .filters {
