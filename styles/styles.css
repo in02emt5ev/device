@@ -378,6 +378,7 @@ body {
 .page-footer__middle {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .page-footer__address {
@@ -392,6 +393,10 @@ body {
   display: flex;
   justify-content: space-between;
   width: 444px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .page-footer__phone {
