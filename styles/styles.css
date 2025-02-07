@@ -272,8 +272,9 @@ body {
 
 .delivery-link {
   display: block;
-  width: 1160px;
+  width: 910px;
   margin: 0 auto;
+  padding: 40px 125px;
 
   font-weight: 800;
   font-size: 20px;
