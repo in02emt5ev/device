@@ -118,10 +118,15 @@ body {
 }
 
 .user-menu {
+  display: flex;
+  justify-content: space-between;
   width: 231px;
 }
 
 .action-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 241px;
 }
 
