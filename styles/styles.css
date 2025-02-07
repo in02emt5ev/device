@@ -426,6 +426,13 @@ body {
 }
 
 .credit {
+  display: block;
+  width: 115px;
+  height: 33px;
+}
+
+.credit__image {
+  display: block;
   width: 115px;
   height: 33px;
 }
