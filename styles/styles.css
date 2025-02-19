@@ -142,6 +142,7 @@ body {
 
 .nav-menu {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .nav-menu li:not(:last-child) {
