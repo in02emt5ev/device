@@ -119,6 +119,7 @@ body {
 
 .user-menu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 231px;
 }
