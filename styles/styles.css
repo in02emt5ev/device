@@ -189,6 +189,16 @@ body {
   list-style: none;
 }
 
+.slide {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide-content-wrapper {
+  width: 560px;
+  padding-top: 108px;
+}
+
 .title {
   font-weight: 800;
   font-size: 50px;
