@@ -67,6 +67,10 @@ body {
   width: 1040px;
 }
 
+.page__section {
+  margin-bottom: 70px;
+}
+
 .page-nav {
   width: 1040px;
   margin: 0 auto;
