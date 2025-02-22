@@ -359,6 +359,7 @@ body {
 
 .about {
   width: 520px;
+  padding-top: 47px;
 }
 
 .about__title {
@@ -368,10 +369,6 @@ body {
 .about p {
   margin: 0;
   margin-bottom: 30px;
-}
-
-.contacts {
-  width: 532px;
 }
 
 .delivery-list {
@@ -389,6 +386,31 @@ body {
 
 .delivery-list li:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.contacts {
+  width: 532px;
+  padding-top: 48px;
+}
+
+.contacts__title {
+  margin-bottom: 48px;
+}
+
+.contacts__description,
+.contacts__info,
+.contacts__schedule {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.contacts__schedule p {
+  margin: 0;
+}
+
+.contacts__subtitle {
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .subtitle {
