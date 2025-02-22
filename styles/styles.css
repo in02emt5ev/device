@@ -211,7 +211,19 @@ body {
   color: #000000;
 }
 
+.slide__slogan {
+  margin-bottom: 30px;
+}
+
+.slide__description {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
 .btn {
+  display: block;
+
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -221,6 +233,10 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
+}
+
+.slide__btn {
+  margin-bottom: 50px;
 }
 
 .props th {
