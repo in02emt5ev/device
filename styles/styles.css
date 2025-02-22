@@ -281,14 +281,22 @@ body {
 }
 
 .services-tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 280px;
   margin: 0;
   padding: 0;
+  padding-top: 65px;
+  padding-bottom: 65px;
+
+  list-style: none;
 
   border-right: 7px solid #000000;
 }
 
 .services-panels {
+  flex-grow: 1;
   margin: 0;
   padding: 0;
 }
