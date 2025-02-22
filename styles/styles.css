@@ -297,6 +297,16 @@ body {
   padding-left: 116px;
 }
 
+.services-panel__title {
+  margin-bottom: 34px;
+}
+
+.services-panel__text {
+  width: 476px;
+  margin: 0;
+  padding: 0;
+}
+
 .services-tab {
   font-weight: 800;
   font-size: 18px;
