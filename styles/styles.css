@@ -361,16 +361,34 @@ body {
   width: 520px;
 }
 
+.about__title {
+  margin-bottom: 48px;
+}
+
+.about p {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
 .contacts {
   width: 532px;
 }
 
 .delivery-list {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  list-style: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
   letter-spacing: -0.02em;
+}
+
+.delivery-list li:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .subtitle {
