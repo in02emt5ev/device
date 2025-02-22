@@ -43,6 +43,9 @@ body {
   color: #444444;
 }
 
+
+/* ___common-styles___ */
+
 .visually-hidden {
   position: absolute;
 
@@ -67,9 +70,33 @@ body {
   width: 1040px;
 }
 
-.page__section {
-  margin-bottom: 70px;
+.title {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  font-family: "Raleway", "Arial", "Helvetica", sans-serif;
+  color: #000000;
 }
+
+.btn {
+  display: block;
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "Raleway", "Arial", "Helvetica", sans-serif;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+}
+
+/* ___page-header___ */
 
 .logo {
   display: block;
@@ -189,9 +216,17 @@ body {
   text-decoration: none;
 }
 
+/* ___page-main___ */
+
 .main-container {
   flex-grow: 1;
 }
+
+.page__section {
+  margin-bottom: 70px;
+}
+
+/* ___slider___ */
 
 .slider {
   background-image: linear-gradient(#ffe17f 24%, #ffffff 24%);
@@ -214,18 +249,6 @@ body {
   padding-top: 108px;
 }
 
-.title {
-  display: block;
-  margin: 0;
-  padding: 0;
-
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
-  font-family: "Raleway", "Arial", "Helvetica", sans-serif;
-  color: #000000;
-}
-
 .slide__slogan {
   margin-bottom: 30px;
 }
@@ -234,20 +257,6 @@ body {
   margin: 0;
   margin-bottom: 50px;
   padding: 0;
-}
-
-.btn {
-  display: block;
-
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  font-family: "Raleway", "Arial", "Helvetica", sans-serif;
-  text-align: center;
-  color: #000000;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.2em;
 }
 
 .slide__btn {
@@ -264,6 +273,8 @@ body {
   line-height: 30px;
   color: #000000;
 }
+
+/* ___favourites___ */
 
 .favourites-list {
   display: flex;
@@ -286,6 +297,8 @@ body {
   text-decoration: none;
   letter-spacing: -0.02em;
 }
+
+/* ___services___ */
 
 .services {
   background-image: linear-gradient(#ffffff 26%, #f0f0f0 26%);
@@ -344,6 +357,8 @@ body {
   letter-spacing: 0.2em;
 }
 
+/* ___delivery-link___ */
+
 .delivery-link {
   display: block;
   width: 910px;
@@ -367,6 +382,8 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+/* ___about___ */
 
 .about {
   width: 520px;
@@ -398,6 +415,8 @@ body {
 .delivery-list li:not(:last-child) {
   margin-bottom: 20px;
 }
+
+/* ___contacts___ */
 
 .contacts {
   width: 532px;
@@ -440,6 +459,8 @@ body {
   line-height: 30px;
   color: inherit;
 }
+
+/* ___mailing___ */
 
 .mailing {
   padding-top: 65px;
@@ -492,6 +513,8 @@ body {
 .mailing__note {
   margin: 0;
 }
+
+/* ___page-footer___ */
 
 .page-footer {
   padding-top: 65px;
