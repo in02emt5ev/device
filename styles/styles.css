@@ -431,6 +431,9 @@ body {
 }
 
 .mailing {
+  padding-top: 65px;
+  padding-bottom: 55px;
+
   background-color: #f0f0f0;
 }
 
@@ -439,6 +442,8 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  gap: 145px;
 }
 
 .mailing__title {
@@ -447,6 +452,7 @@ body {
 
 .mailing__description {
   width: 560px;
+  margin: 0;
 }
 
 .mailing-form {
@@ -470,6 +476,10 @@ body {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+}
+
+.mailing__note {
+  margin: 0;
 }
 
 .page-footer {
