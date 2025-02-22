@@ -294,6 +294,8 @@ body {
 }
 
 .services-panel {
+  padding-top: 72px;
+  padding-bottom: 72px;
   padding-left: 116px;
 }
 
