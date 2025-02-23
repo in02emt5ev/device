@@ -597,14 +597,28 @@ body {
   height: 33px;
 }
 
+.page-catalog {
+  padding-top: 35px;
+}
+
+.page-catalog__title {
+  margin-bottom: 15px;
+}
+
 .breadcrumbs {
   display: flex;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .breadcrumbs li:not(:last-child) {
   margin-right: 36px;
+}
+
+.page-catalog__bread {
+  margin-bottom: 35px;
 }
 
 .breadcrumb {
