@@ -705,6 +705,13 @@ body {
   background-color: #ffffff;
 }
 
+.products-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .product__title {
   font-weight: 700;
   font-size: 18px;
@@ -730,7 +737,23 @@ body {
 }
 
 .pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  list-style: none;
+
   background-color: #f0f0f0;
+}
+
+.pagination li:first-child {
+  margin-right: auto;
+}
+
+.pagination li:last-child {
+  margin-left: auto;
 }
 
 .pagination-btn {
@@ -745,6 +768,12 @@ body {
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  padding: 10px 15px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
