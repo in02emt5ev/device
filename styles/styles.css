@@ -112,7 +112,7 @@ body {
 .page-nav {
   width: 1040px;
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 17px 60px 23px;
 
   background-image: linear-gradient(#ffffff 18%, #ffe17f 18%);
 }
@@ -124,9 +124,14 @@ body {
   list-style: none;
 }
 
+.page-nav__logo {
+  margin-bottom: 30px;
+}
+
 .user-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .search-form {
