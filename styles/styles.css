@@ -651,6 +651,13 @@ body {
   letter-spacing: 0.2em;
 }
 
+.filter-group ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .group-title {
   font-weight: 700;
   font-size: 18px;
