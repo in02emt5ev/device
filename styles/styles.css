@@ -474,13 +474,15 @@ body {
   background-color: #f0f0f0;
 }
 
-.mailing-layout {
+.mailing__top {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 145px;
+}
 
-  gap: 145px;
+.mailing__bottom {
+  display: flex;
+  justify-content: space-between;
 }
 
 .mailing__title {

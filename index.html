@@ -279,19 +279,23 @@
       </div>
 
       <section class="mailing">
-        <div class="page-container mailing-layout">
-          <h2 class="mailing__title title">Подпишитесь на рассылку</h2>
+        <div class="page-container">
+          <div class="mailing__top">
+            <h2 class="mailing__title title">Подпишитесь на рассылку</h2>
 
-          <p class="mailing__description">Еженедельный дайджест с обзорами новинок, длительными&nbsp;тест-драйвами,
-            распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+            <p class="mailing__description">Еженедельный дайджест с обзорами новинок, длительными&nbsp;тест-драйвами,
+              распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          </div>
 
-          <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="get">
-            <label class="visually-hidden" for="email">Поле для ввода почты</label>
-            <input class="mailing-field" name="email" type="email" id="email" placeholder="Ваш e-mail" required>
-            <button class="mailing-submit" type="submit">Подписаться</button>
-          </form>
+          <div class="mailing__bottom">
+            <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="get">
+              <label class="visually-hidden" for="email">Поле для ввода почты</label>
+              <input class="mailing-field" name="email" type="email" id="email" placeholder="Ваш e-mail" required>
+              <button class="mailing-submit" type="submit">Подписаться</button>
+            </form>
 
-          <p class="mailing__note">Это бесплатно</p>
+            <p class="mailing__note">Это бесплатно</p>
+          </div>
         </div>
       </section>
     </main>
