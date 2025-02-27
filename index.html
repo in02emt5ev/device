@@ -8,7 +8,7 @@
   <body>
     <header class="page-header">
       <nav class="page-nav">
-        <a class="logo">
+        <a class="logo page-nav__logo">
           <img class="logo__image" src="img/logo.svg" alt="Логотип интернет магазина" width="145" height="36">
         </a>
 
@@ -37,11 +37,11 @@
 
         <ul class="nav-menu">
           <li>
-            <a class="nav-link" href="#">Каталог товаров</a>
+            <a class="nav-link" href="catalog.html">Каталог товаров</a>
 
-            <ul class="sub-menu">
+            <ul class="sub-menu" hidden>
               <li><a class="sub-link" href="#">Виртуальная реальность</a></li>
-              <li><a class="sub-link" href="catalog.html">Моноподы для селфи</a></li>
+              <li><a class="sub-link" href="#">Моноподы для селфи</a></li>
               <li><a class="sub-link" href="#">Экшн-камеры</a></li>
               <li><a class="sub-link" href="#">Фитнес-браслеты</a></li>
               <li><a class="sub-link" href="#">Умные часы</a></li>
@@ -64,7 +64,7 @@
     <main class="page-main main-container">
       <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
 
-      <section class="promo">
+      <section class="promo page__section">
         <h2 class="visually-hidden">Популярные товары</h2>
 
         <div class="page-container">
@@ -72,72 +72,82 @@
             <ul class="slides">
               <li class="slide">
                 <img class="slide__image" src="img/slider/slider-1.png" alt="Крутой квадрокоптер с лазером" width="560" height="560">
-                <b class="title slide__slogan">Порхает как бабочка<br>жалит как пчела!</b>
-                <p class="slide__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
-                  лазером, замаскированным под стандартную камеру.</p>
-                <a class="btn" href="#">Подробнее</a>
-                <table class="props">
-                  <thead>
-                    <tr>
-                      <th>Дальность полёта</th>
-                      <th>Радиус поражения</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>800 м.</td>
-                      <td>50 м.</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="slide-content-wrapper">
+                  <b class="title slide__slogan">Порхает как бабочка,<br>жалит как пчела!</b>
+                  <p class="slide__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
+                    лазером, замаскированным под стандартную камеру.</p>
+                  <a class="btn slide__btn" href="#">Подробнее</a>
+                  <table class="props">
+                    <thead>
+                      <tr>
+                        <th>Дальность полёта</th>
+                        <th>Радиус поражения</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>800 м.</td>
+                        <td>50 м.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </li>
-              <li class="slide">
+              <li class="slide visually-hidden">
                 <img class="slide__image" src="img/slider/slider-2.png" alt="Мотивирующий фитнес-браслет" width="560" height="560">
-                <b class="title slide__slogan">Худеем<br>правильно!</b>
-                <p class="slide__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не
-                  пропускать занятия и соблюдать диету.</p>
-                <a class="btn" href="#">Подробнее</a>
-                <table class="props">
-                  <thead>
-                    <tr>
-                      <th>Без подзарядки</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>48 ч.</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="slide-content-wrapper">
+                  <b class="title slide__slogan">Худеем<br>правильно!</b>
+                  <p class="slide__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не
+                    пропускать занятия и соблюдать диету.</p>
+                  <a class="btn slide__btn" href="#">Подробнее</a>
+                  <table class="props">
+                    <thead>
+                      <tr>
+                        <th>Без подзарядки</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>48 часов</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </li>
-              <li class="slide">
+              <li class="slide visually-hidden">
                 <img class="slide__image" src="img/slider/slider-3.png" alt="Гигантская селфи-палка" width="560" height="560">
-                <b class="title slide__slogan">Делай селфи,<br>как Бен Стиллер!</b>
-                <p class="slide__description">Самая длинная палкадля селфи доступна в нашем магазине. Восемь
-                  (Восемь, Карл!) метров длиной и весом всего 5кг.</p>
-                <a class="btn" href="#">Подробнее</a>
-                <table class="props">
-                  <thead>
-                    <tr>
-                      <th>Длина палки</th>
-                      <th>Вес палки</th>
-                      <th>Материал</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>8,5 м.</td>
-                      <td>5 кг.</td>
-                      <td>Карбон</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="slide-content-wrapper">
+                  <b class="title slide__slogan">Делай селфи,<br>как Бен Стиллер!</b>
+                  <p class="slide__description">Самая длинная палкадля селфи доступна в нашем магазине. Восемь
+                    (Восемь, Карл!) метров длиной и весом всего 5кг.</p>
+                  <a class="btn slide__btn" href="#">Подробнее</a>
+                  <table class="props">
+                    <thead>
+                      <tr>
+                        <th>Длина палки</th>
+                        <th>Вес палки</th>
+                        <th>Материал</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>8,5 м.</td>
+                        <td>5 кг.</td>
+                        <td>Карбон</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </li>
             </ul>
 
             <div class="slider-arrows">
-              <button class="slider-arrow slider-arrow_prev" type="button">Предыдущий слайд</button>
-              <button class="slider-arrow sldier-arrow_next" type="button">Следующий слайд</button>
+              <button class="slider-arrow slider-arrow_prev" type="button">
+                <span class="visually-hidden">Предыдущий слайд</span>
+              </button>
+              <button class="slider-arrow sldier-arrow_next" type="button">
+                <span class="visually-hidden">Следующий слайд</span>
+              </button>
             </div>
 
             <ol class="slider-select">
@@ -161,7 +171,7 @@
         </div>
       </section>
 
-      <section class="favourites">
+      <section class="favourites page__section">
         <h2 class="visually-hidden">Популярные категории</h2>
 
         <div class="page-container">
@@ -188,7 +198,7 @@
         </div>
       </section>
 
-      <section class="services">
+      <section class="services page__section">
         <h2 class="visually-hidden">Наши услуги</h2>
 
         <div class="services-layout page-container">
@@ -207,35 +217,36 @@
           <div class="services-panels">
             <div class="services-panel" id="delivery-panel" role="tabpanel">
               <h3 class="title services-panel__title">Доставка</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь
-                мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              <p class="services-panel__text">Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь
+                мы&nbsp;неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
-            <div class="services-panel" id="warranty-panel" role="tabpanel">
+            <div class="services-panel" id="warranty-panel" role="tabpanel" hidden>
               <h3 class="title services-panel__title">Гарантия</h3>
-              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим
+              <p class="services-panel__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим
                 вам новый. Товар, не дом, конечно же.</p>
             </div>
-            <div class="services-panel" id="credit-panel" role="tabpanel">
+            <div class="services-panel" id="credit-panel" role="tabpanel" hidden>
               <h3 class="title services-panel__title">Кредит</h3>
-              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+              <p class="services-panel__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
                 условия кредита. Выгодные для банка, разумеется.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <a class="delivery-link" href="#">Доставим редкий товар по заказ</a>
+      <div class="page__section">
+        <a class="delivery-link" href="#">Доставим редкий товар по заказ</a>
+      </div>
 
-
-      <div class="columns-layout page-container">
+      <div class="columns-layout page-container page__section">
         <section class="about">
           <h2 class="title about__title">О нас</h2>
 
-          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика,&nbsp;который есть в каждом из нас.</p>
 
           <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
 
-          <ul class="delivery-list">
+          <ul class="delivery-list about__list">
             <li>Меловые линии</li>
             <li>СДИК</li>
             <li>Токсберри</li>
@@ -247,11 +258,11 @@
         <section class="contacts">
           <h2 class="title contacts__title">Контакты</h2>
 
-          <p class="contacts__description">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность
+          <p class="contacts__description">Вы можете забрать товар сами, заехав в наш офис. Заодно&nbsp;сможете проверить работоспособность
             покупки.</p>
 
           <div class="contacts__info">
-            <h3 class="subtitle">Интернет-магазин «Девайс»</h3>
+            <h3 class="subtitle contacts__subtitle">Интернет-магазин «Девайс»</h3>
             <address class="address">
               Санкт-Петербург, набережная реки Карповки, 5, литера П.
             </address>
@@ -259,7 +270,7 @@
           </div>
 
           <div class="contacts__schedule">
-            <h3 class="subtitle">Время работы</h3>
+            <h3 class="subtitle contacts__subtitle">Время работы</h3>
             <p>пн–пт: с 10:00 до 22:00<br>сб–вс: с 10:00 до 19:00</p>
           </div>
 
@@ -268,26 +279,30 @@
       </div>
 
       <section class="mailing">
-        <div class="page-container mailing-layout">
-          <h2 class="mailing__title title">Подпишитесь на рассылку</h2>
+        <div class="page-container">
+          <div class="mailing__top">
+            <h2 class="mailing__title title">Подпишитесь на рассылку</h2>
 
-          <p class="mailing__description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
-            распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+            <p class="mailing__description">Еженедельный дайджест с обзорами новинок, длительными&nbsp;тест-драйвами,
+              распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          </div>
 
-          <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="get">
-            <label class="visually-hidden" for="email">Поле для ввода почты</label>
-            <input class="mailing-field" name="email" type="email" id="email" placeholder="Ваш e-mail" required>
-            <button class="mailing-submit" type="submit">Подписаться</button>
-          </form>
+          <div class="mailing__bottom">
+            <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="get">
+              <label class="visually-hidden" for="email">Поле для ввода почты</label>
+              <input class="mailing-field" name="email" type="email" id="email" placeholder="Ваш e-mail" required>
+              <button class="mailing-submit" type="submit">Подписаться</button>
+            </form>
 
-          <p class="mailing__note">Это бесплатно</p>
+            <p class="mailing__note">Это бесплатно</p>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
       <div class="page-container">
-        <a class="logo">
+        <a class="logo page-footer__logo">
           <img class="logo__image" src="img/logo_footer.svg" alt="Логотип интернет магазина" width="145" height="36">
         </a>
 

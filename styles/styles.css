@@ -43,6 +43,23 @@ body {
   color: #444444;
 }
 
+
+/* ___common-styles___ */
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
+
 .page-container {
   width: 1160px;
   margin: 0 auto;
@@ -53,10 +70,49 @@ body {
   width: 1040px;
 }
 
+.title {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  font-family: "Raleway", "Arial", "Helvetica", sans-serif;
+  color: #000000;
+}
+
+.btn {
+  display: block;
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "Raleway", "Arial", "Helvetica", sans-serif;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+}
+
+/* ___page-header___ */
+
+.logo {
+  display: block;
+  margin: 0;
+}
+
+.logo__image {
+  display: block;
+  width: 145px;
+  height: 36px;
+}
+
 .page-nav {
   width: 1040px;
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 17px 60px 23px;
 
   background-image: linear-gradient(#ffffff 18%, #ffe17f 18%);
 }
@@ -64,11 +120,18 @@ body {
 .page-nav ul {
   margin: 0;
   padding: 0;
+
+  list-style: none;
+}
+
+.page-nav__logo {
+  margin-bottom: 30px;
 }
 
 .user-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .search-form {
@@ -102,10 +165,16 @@ body {
 }
 
 .user-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 231px;
 }
 
 .action-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 241px;
 }
 
@@ -120,6 +189,7 @@ body {
 
 .nav-menu {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .nav-menu li:not(:last-child) {
@@ -151,32 +221,51 @@ body {
   text-decoration: none;
 }
 
+/* ___page-main___ */
+
 .main-container {
   flex-grow: 1;
 }
+
+.page__section {
+  margin-bottom: 70px;
+}
+
+/* ___slider___ */
 
 .slider {
   background-image: linear-gradient(#ffe17f 24%, #ffffff 24%);
 }
 
-.title {
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
-  font-family: "Raleway", "Arial", "Helvetica", sans-serif;
-  color: #000000;
+.slides {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
-.btn {
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  font-family: "Raleway", "Arial", "Helvetica", sans-serif;
-  text-align: center;
-  color: #000000;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.2em;
+.slide {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide-content-wrapper {
+  width: 560px;
+  padding-top: 108px;
+}
+
+.slide__slogan {
+  margin-bottom: 30px;
+}
+
+.slide__description {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.slide__btn {
+  margin-bottom: 50px;
 }
 
 .props th {
@@ -190,14 +279,21 @@ body {
   color: #000000;
 }
 
+/* ___favourites___ */
+
 .favourites-list {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .category {
+  display: block;
+  width: 160px;
+
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -206,6 +302,8 @@ body {
   text-decoration: none;
   letter-spacing: -0.02em;
 }
+
+/* ___services___ */
 
 .services {
   background-image: linear-gradient(#ffffff 26%, #f0f0f0 26%);
@@ -216,20 +314,40 @@ body {
 }
 
 .services-tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 280px;
   margin: 0;
   padding: 0;
+  padding-top: 65px;
+  padding-bottom: 65px;
+
+  list-style: none;
 
   border-right: 7px solid #000000;
 }
 
 .services-panels {
+  flex-grow: 1;
   margin: 0;
   padding: 0;
 }
 
 .services-panel {
+  padding-top: 72px;
+  padding-bottom: 72px;
   padding-left: 116px;
+}
+
+.services-panel__title {
+  margin-bottom: 34px;
+}
+
+.services-panel__text {
+  width: 476px;
+  margin: 0;
+  padding: 0;
 }
 
 .services-tab {
@@ -244,10 +362,13 @@ body {
   letter-spacing: 0.2em;
 }
 
+/* ___delivery-link___ */
+
 .delivery-link {
   display: block;
-  width: 1160px;
+  width: 910px;
   margin: 0 auto;
+  padding: 40px 125px;
 
   font-weight: 800;
   font-size: 20px;
@@ -267,20 +388,64 @@ body {
   justify-content: space-between;
 }
 
+/* ___about___ */
+
 .about {
   width: 520px;
+  padding-top: 47px;
 }
 
-.contacts {
-  width: 532px;
+.about__title {
+  margin-bottom: 48px;
+}
+
+.about p {
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .delivery-list {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  list-style: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
   letter-spacing: -0.02em;
+}
+
+.delivery-list li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/* ___contacts___ */
+
+.contacts {
+  width: 532px;
+  padding-top: 48px;
+}
+
+.contacts__title {
+  margin-bottom: 48px;
+}
+
+.contacts__description,
+.contacts__info,
+.contacts__schedule {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.contacts__schedule p {
+  margin: 0;
+}
+
+.contacts__subtitle {
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .subtitle {
@@ -300,14 +465,23 @@ body {
   color: inherit;
 }
 
+/* ___mailing___ */
+
 .mailing {
+  padding-top: 65px;
+  padding-bottom: 55px;
+
   background-color: #f0f0f0;
 }
 
-.mailing-layout {
+.mailing__top {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 145px;
+}
+
+.mailing__bottom {
+  display: flex;
   justify-content: space-between;
 }
 
@@ -317,6 +491,7 @@ body {
 
 .mailing__description {
   width: 560px;
+  margin: 0;
 }
 
 .mailing-form {
@@ -342,15 +517,30 @@ body {
   letter-spacing: 0.2em;
 }
 
+.mailing__note {
+  margin: 0;
+}
+
+/* ___page-footer___ */
+
 .page-footer {
+  padding-top: 65px;
+  padding-bottom: 65px;
+
   color: #ffffff;
 
   background-color: #444444;
 }
 
+.page-footer__logo {
+  margin-bottom: 35px;
+}
+
 .page-footer__middle {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
 }
 
 .page-footer__address {
@@ -365,6 +555,10 @@ body {
   display: flex;
   justify-content: space-between;
   width: 444px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .page-footer__phone {
@@ -380,23 +574,58 @@ body {
 }
 
 .social {
+  display: flex;
+  justify-content: space-between;
   width: 150px;
   margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
 }
 
 .credit {
+  display: block;
   width: 115px;
   height: 33px;
+}
+
+.credit__image {
+  display: block;
+  width: 115px;
+  height: 33px;
+}
+
+.page-catalog {
+  padding-top: 35px;
+}
+
+.page-catalog__title {
+  margin-bottom: 15px;
 }
 
 .breadcrumbs {
   display: flex;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .breadcrumbs li:not(:last-child) {
   margin-right: 36px;
+}
+
+.page-catalog__bread {
+  margin-bottom: 35px;
 }
 
 .breadcrumb {
@@ -420,6 +649,9 @@ body {
 }
 
 .filter-title {
+  margin: 0;
+  padding: 0;
+
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
@@ -427,6 +659,13 @@ body {
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+}
+
+.filter-group ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .group-title {
@@ -450,8 +689,34 @@ body {
   color: #000000;
 }
 
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sorting-form {
+  width: 160px;
+}
+
+.orders {
+  display: flex;
+  width: 60px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .products {
   background-color: #ffffff;
+}
+
+.products-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .product__title {
@@ -479,7 +744,23 @@ body {
 }
 
 .pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  list-style: none;
+
   background-color: #f0f0f0;
+}
+
+.pagination li:first-child {
+  margin-right: auto;
+}
+
+.pagination li:last-child {
+  margin-left: auto;
 }
 
 .pagination-btn {
@@ -494,6 +775,12 @@ body {
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  padding: 10px 15px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

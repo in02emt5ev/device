@@ -8,7 +8,7 @@
   <body>
     <header class="page-header">
       <nav class="page-nav">
-        <a class="logo" href="index.html">
+        <a class="logo page-nav__logo" href="index.html">
           <img class="logo__image" src="img/logo.svg" alt="Логотип интернет магазина" width="145" height="36">
         </a>
 
@@ -42,7 +42,7 @@
           <li>
             <a class="nav-link" href="#">Каталог товаров</a>
 
-            <ul class="sub-menu">
+            <ul class="sub-menu" hidden>
               <li><a class="sub-link" href="#">Виртуальная реальность</a></li>
               <li><a class="sub-link" href="#">Моноподы для селфи</a></li>
               <li><a class="sub-link" href="#">Экшн-камеры</a></li>
@@ -64,11 +64,11 @@
       </nav>
     </header>
 
-    <main class="page-main">
+    <main class="page-main page-catalog">
       <div class="page-container page-container_catalog">
-        <h1 class="title">Моноподы для селфи</h1>
+        <h1 class="title page-catalog__title">Моноподы для селфи</h1>
 
-        <ul class="breadcrumbs">
+        <ul class="breadcrumbs page-catalog__bread">
           <li>
             <a class="breadcrumb" href="index.html">Главная</a>
           </li>
@@ -80,7 +80,6 @@
           </li>
         </ul>
       </div>
-
 
       <div class="catalog-wrapper">
         <div class="columns-layout page-container">
@@ -183,12 +182,18 @@
                 </select>
               </form>
 
-              <button class="order-btn" type="button">
-                <span class="visually-hidden">По возрастанию</span>
-              </button>
-              <button class="order-btn order-btn_desc" type="button">
-                <span class="visually-hidden">По убыванию</span>
-              </button>
+              <ul class="orders">
+                <li>
+                  <button class="order-btn" type="button">
+                    <span class="visually-hidden">По возрастанию</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="order-btn order-btn_desc" type="button">
+                    <span class="visually-hidden">По убыванию</span>
+                  </button>
+                </li>
+              </ul>
             </section>
 
             <section class="products">
@@ -254,7 +259,7 @@
 
     <footer class="page-footer">
       <div class="page-container">
-        <a class="logo">
+        <a class="logo" href="index.html">
           <img class="logo__image" src="img/logo_footer.svg" alt="Логотип интернет магазина" width="145" height="36">
         </a>
 
