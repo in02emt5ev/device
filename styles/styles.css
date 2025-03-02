@@ -95,7 +95,15 @@ body {
   letter-spacing: 0.2em;
 }
 
-/* ___page-header___ */
+/* ___page-nav___ */
+
+.page-nav {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 17px 60px 23px;
+
+  background-image: linear-gradient(#ffffff 18%, #ffe17f 18%);
+}
 
 .logo {
   display: block;
@@ -109,12 +117,8 @@ body {
   height: auto;
 }
 
-.page-nav {
-  width: 1040px;
-  margin: 0 auto;
-  padding: 17px 60px 23px;
-
-  background-image: linear-gradient(#ffffff 18%, #ffe17f 18%);
+.page-nav__logo {
+  margin-bottom: 30px;
 }
 
 .page-nav ul {
@@ -122,10 +126,6 @@ body {
   padding: 0;
 
   list-style: none;
-}
-
-.page-nav__logo {
-  margin-bottom: 30px;
 }
 
 .user-wrapper {
