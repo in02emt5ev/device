@@ -100,13 +100,14 @@ body {
 
 .logo {
   display: block;
-  margin: 0;
+  width: 145px;
+  height: 36px;
 }
 
 .logo__image {
   display: block;
-  width: 145px;
-  height: 36px;
+  max-width: 100%;
+  height: auto;
 }
 
 .page-nav {
