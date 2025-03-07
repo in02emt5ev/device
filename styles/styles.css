@@ -490,7 +490,6 @@ body {
 
 .mailing-layout {
   display: grid;
-  grid-template-rows: repeat(2, min-content);
   grid-template-columns: repeat(6, 160px);
   row-gap: 145px;
 
