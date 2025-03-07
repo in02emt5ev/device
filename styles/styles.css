@@ -748,6 +748,7 @@ body {
   grid-template-columns: repeat(2, 360px);
   gap: 40px;
   margin: 0;
+  margin-bottom: 44px;
   padding: 0;
 
   list-style: none;
@@ -812,6 +813,10 @@ body {
 
   background-color: #ffffff;
   border: 3px solid #e5e5e5;
+}
+
+.products__more {
+  margin-bottom: 44px;
 }
 
 /* ___pagination___ */
