@@ -743,7 +743,10 @@ body {
   background-color: #ffffff;
 }
 
-.products-list {
+.products__list {
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  gap: 40px;
   margin: 0;
   padding: 0;
 
