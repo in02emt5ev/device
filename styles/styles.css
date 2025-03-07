@@ -823,6 +823,8 @@ body {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   margin: 0;
   padding: 0;
   padding-top: 15px;
@@ -833,11 +835,11 @@ body {
   background-color: #f0f0f0;
 }
 
-.pagination li:first-child {
+.pagination-item:first-child {
   margin-right: auto;
 }
 
-.pagination li:last-child {
+.pagination-item:last-child {
   margin-left: auto;
 }
 
