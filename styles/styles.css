@@ -844,10 +844,16 @@ body {
 }
 
 .pagination-btn {
+  display: block;
+  box-sizing: border-box;
+  min-width: 128px;
+  padding: 25px;
+
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
   font-family: "Raleway", "Arial", "Helvetica", sans-serif;
+  text-align: center;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
@@ -855,11 +861,13 @@ body {
 }
 
 .pagination-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   width: 40px;
   height: 40px;
-  padding: 10px 15px;
+  padding: 10px;
 
   font-weight: 400;
   font-size: 16px;
