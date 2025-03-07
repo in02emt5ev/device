@@ -738,6 +738,8 @@ body {
 /* ___products___ */
 
 .products {
+  padding: 70px 40px 78px;
+
   background-color: #ffffff;
 }
 
