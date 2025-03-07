@@ -755,7 +755,20 @@ body {
 
 /* ___product___ */
 
+.product {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.product__content {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product__title {
+  width: 200px;
   margin: 0;
 
   font-weight: 700;
@@ -765,8 +778,21 @@ body {
   letter-spacing: -0.02em;
 }
 
+.product__image {
+  order: -1;
+  margin-bottom: 32px;
+}
+
 .product__price {
+  margin: 0;
+
   line-height: 21px;
+}
+
+.product__btn {
+  position: absolute;
+
+  display: none;
 }
 
 .more-btn {
