@@ -591,12 +591,21 @@ body {
 
 .social {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   width: 150px;
   margin: 0 auto;
   padding: 0;
 
   list-style: none;
+}
+
+.social li {
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+.social li:nth-child(3n) {
+  margin-right: 0;
 }
 
 .social-link {
