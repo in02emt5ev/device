@@ -136,6 +136,8 @@ body {
 }
 
 .search-form {
+  display: grid;
+  grid-template-columns: 1fr 160px;
   width: 517px;
 }
 
@@ -509,6 +511,8 @@ body {
 }
 
 .mailing-form {
+  display: grid;
+  grid-template-columns: 1fr 253px;
   grid-column: 1 / 6;
   width: 810px;
 }
