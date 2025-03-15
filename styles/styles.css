@@ -132,6 +132,7 @@ body {
 .user-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -201,12 +202,20 @@ body {
 }
 
 .menu-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
   color: #000000;
   text-decoration: none;
 }
 
 .menu-link_logout {
   opacity: 0.3;
+}
+
+.menu-link__icon {
+  margin-right: 12px;
 }
 
 .nav-menu {
