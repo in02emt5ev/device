@@ -142,11 +142,22 @@ body {
 }
 
 .search-field {
+  padding: 8px;
+  padding-left: 48px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   font-family: inherit;
   color: #000000;
+
+  background-color: transparent;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: 16px 50%;
+  border: 2px solid #000000;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 
 .search-field::placeholder {
@@ -160,11 +171,19 @@ body {
 }
 
 .search-submit {
+  padding: 8px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   font-family: inherit;
   text-align: center;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-left: 0;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 .user-menu {
