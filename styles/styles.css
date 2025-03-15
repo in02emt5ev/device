@@ -221,6 +221,7 @@ body {
 .nav-menu {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .nav-menu li:not(:last-child) {
@@ -239,6 +240,24 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
+}
+
+.nav-link_sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link_sub::after {
+  content: "";
+
+  display: block;
+  width: 50px;
+  height: 50px;
+
+  background-image: url("../img/sub_button.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .nav-link_footer {
