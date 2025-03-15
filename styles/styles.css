@@ -271,12 +271,29 @@ body {
   margin-bottom: 50px;
 }
 
-.props th {
+.props {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  margin: 0;
+
+  column-gap: 20px;
+}
+
+.prop {
+  display: flex;
+  flex-direction: column;
+}
+
+.props dt {
   font-weight: 400;
   font-size: 16px;
 }
 
-.props td {
+.props dd {
+  order: -1;
+  margin: 0;
+  margin-bottom: 15px;
+
   font-size: 36px;
   line-height: 30px;
   color: #000000;
