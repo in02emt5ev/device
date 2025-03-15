@@ -64,7 +64,7 @@
     <main class="page-main main-container">
       <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
 
-      <section class="promo page__section">
+      <section class="promo">
         <h2 class="visually-hidden">Популярные товары</h2>
 
         <div class="page-container">
@@ -77,20 +77,16 @@
                   <p class="slide__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
                     лазером, замаскированным под стандартную камеру.</p>
                   <a class="btn slide__btn" href="#">Подробнее</a>
-                  <table class="props">
-                    <thead>
-                      <tr>
-                        <th>Дальность полёта</th>
-                        <th>Радиус поражения</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>800 м.</td>
-                        <td>50 м.</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <dl class="props">
+                    <div class="prop">
+                      <dt>Дальность полёта</dt>
+                      <dd>800 м</dd>
+                    </div>
+                    <div class="prop">
+                      <dt>Радиус поражения</dd>
+                      <dd>50 м</dd>
+                    </div>
+                  </dl>
                 </div>
               </li>
               <li class="slide visually-hidden">
@@ -100,18 +96,12 @@
                   <p class="slide__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не
                     пропускать занятия и соблюдать диету.</p>
                   <a class="btn slide__btn" href="#">Подробнее</a>
-                  <table class="props">
-                    <thead>
-                      <tr>
-                        <th>Без подзарядки</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>48 часов</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <dl class="props">
+                    <div class="prop">
+                      <dt>Без подзарядки</dt>
+                      <dd>48 часов</dd>
+                    </div>
+                  </dl>
                 </div>
               </li>
               <li class="slide visually-hidden">
@@ -121,22 +111,20 @@
                   <p class="slide__description">Самая длинная палкадля селфи доступна в нашем магазине. Восемь
                     (Восемь, Карл!) метров длиной и весом всего 5кг.</p>
                   <a class="btn slide__btn" href="#">Подробнее</a>
-                  <table class="props">
-                    <thead>
-                      <tr>
-                        <th>Длина палки</th>
-                        <th>Вес палки</th>
-                        <th>Материал</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>8,5 м.</td>
-                        <td>5 кг.</td>
-                        <td>Карбон</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <dl class="props">
+                    <div class="prop">
+                      <dt>Длина палки</dt>
+                      <dd>8,5 м</dd>
+                    </div>
+                    <div class="prop">
+                      <dt>Вес палки</dt>
+                      <dd>5 кг</dd>
+                    </div>
+                    <div class="prop">
+                      <dt>Материал</dt>
+                      <dd>Карбон</dd>
+                    </div>
+                  </dl>
                 </div>
               </li>
             </ul>
@@ -171,7 +159,7 @@
         </div>
       </section>
 
-      <section class="favourites page__section">
+      <section class="favourites">
         <h2 class="visually-hidden">Популярные категории</h2>
 
         <div class="page-container">
@@ -198,7 +186,7 @@
         </div>
       </section>
 
-      <section class="services page__section">
+      <section class="services">
         <h2 class="visually-hidden">Наши услуги</h2>
 
         <div class="services-layout page-container">
@@ -234,11 +222,9 @@
         </div>
       </section>
 
-      <div class="page__section">
-        <a class="delivery-link" href="#">Доставим редкий товар по заказ</a>
-      </div>
+      <a class="delivery-link page-main__delivery" href="#">Доставим редкий товар по заказ</a>
 
-      <div class="columns-layout page-container page__section">
+      <div class="info-layout page-container">
         <section class="about">
           <h2 class="title about__title">О нас</h2>
 
@@ -279,23 +265,19 @@
       </div>
 
       <section class="mailing">
-        <div class="page-container">
-          <div class="mailing__top">
-            <h2 class="mailing__title title">Подпишитесь на рассылку</h2>
+        <div class="page-container mailing-layout">
+          <h2 class="mailing__title title">Подпишитесь на рассылку</h2>
 
-            <p class="mailing__description">Еженедельный дайджест с обзорами новинок, длительными&nbsp;тест-драйвами,
-              распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-          </div>
+          <p class="mailing__description">Еженедельный дайджест с обзорами новинок, длительными&nbsp;тест-драйвами,
+            распаковками, а также акции, спецпредложения и вот это вот всё.</p>
 
-          <div class="mailing__bottom">
-            <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="get">
-              <label class="visually-hidden" for="email">Поле для ввода почты</label>
-              <input class="mailing-field" name="email" type="email" id="email" placeholder="Ваш e-mail" required>
-              <button class="mailing-submit" type="submit">Подписаться</button>
-            </form>
+          <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="get">
+            <label class="visually-hidden" for="email">Поле для ввода почты</label>
+            <input class="mailing-field" name="email" type="email" id="email" placeholder="Ваш e-mail" required>
+            <button class="mailing-submit" type="submit">Подписаться</button>
+          </form>
 
-            <p class="mailing__note">Это бесплатно</p>
-          </div>
+          <p class="mailing__note">Это бесплатно</p>
         </div>
       </section>
     </main>
