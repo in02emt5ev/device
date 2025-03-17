@@ -4,7 +4,7 @@
   font-family: "Rubik";
 
   font-display: swap;
-  src: url(../fonts/rubik/rubik-400.woff2) format("woff2");
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-family: "Rubik";
 
   font-display: swap;
-  src: url(../fonts/rubik/rubik-700.woff2) format("woff2");
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
 }
 
 @font-face {
@@ -22,7 +22,7 @@
   font-family: "Raleway";
 
   font-display: swap;
-  src: url(../fonts/raleway/raleway-800.woff2) format("woff2");
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
 }
 
 html {
@@ -321,8 +321,8 @@ body {
 .props {
   display: grid;
   grid-template-columns: repeat(3, max-content);
-  margin: 0;
   gap: 20px;
+  margin: 0;
 }
 
 .slide_selfie .props {
