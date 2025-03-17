@@ -379,6 +379,43 @@ body {
   letter-spacing: -0.02em;
 }
 
+.category::before {
+  content: "";
+
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 33px;
+
+  background-color: #ffe17f;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.category_vr::before {
+  background-image: url("../img/vr.svg");
+}
+
+.category_selfie::before {
+  background-image: url("../img/selfie.svg");
+}
+
+.category_cameras::before {
+  background-image: url("../img/action_cameras.svg");
+}
+
+.category_fitness::before {
+  background-image: url("../img/fitness_bracelets.svg");
+}
+
+.category_swatch::before {
+  background-image: url("../img/smart_watches.svg");
+}
+
+.category_quadro::before {
+  background-image: url("../img/quadrocopters.svg");
+}
+
 /* ___services___ */
 
 .services {
