@@ -322,8 +322,11 @@ body {
   display: grid;
   grid-template-columns: repeat(3, max-content);
   margin: 0;
+  gap: 20px;
+}
 
-  column-gap: 20px;
+.slide_selfie .props {
+  gap: 40px;
 }
 
 .prop {
