@@ -480,10 +480,12 @@ body {
 /* ___delivery-link___ */
 
 .delivery-link {
+  position: relative;
+
   display: block;
   width: 910px;
   margin: 0 auto;
-  padding: 40px 125px;
+  padding: 38px 125px;
 
   font-weight: 800;
   font-size: 20px;
@@ -501,6 +503,40 @@ body {
 .page-main__delivery {
   margin-top: 70px;
   margin-bottom: 70px;
+}
+
+.delivery-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 125px;
+  height: 100px;
+
+  background-color: #ffe17f;
+  background-image: url("../img/delivery-link.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.delivery-link::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 43px;
+
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  background-color: #dcdcdc;
+  background-image: url("../img/info-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  opacity: 0.5;
 }
 
 .info-layout {
