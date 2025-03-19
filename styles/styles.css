@@ -555,6 +555,11 @@ body {
   padding: 0;
 }
 
+.services-tabs li {
+  position: relative;
+  z-index: 2;
+}
+
 .services-tab {
   position: relative;
   z-index: 2;
@@ -577,6 +582,12 @@ body {
   border: 0;
 }
 
+.services-tab_current {
+  position: static;
+
+  color: #ffe17f;
+}
+
 .services-tab::before {
   content: "";
   position: absolute;
@@ -590,6 +601,12 @@ body {
 
   background-color: #ffe17f;
   transform: translateY(-50%);
+}
+
+.services-tab_current::before {
+  height: 100%;
+
+  background-color: #000000;
 }
 
 /* ___delivery-link___ */
