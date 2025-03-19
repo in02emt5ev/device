@@ -834,6 +834,17 @@ body {
 .page-footer__social {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__social::before {
+  content: "";
+
+  display: block;
+  width: 80px;
+  height: 7px;
+
+  background-color: #ffc500;
 }
 
 .social {
