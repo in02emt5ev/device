@@ -409,6 +409,36 @@ body {
   transform: rotate(180deg);
 }
 
+.slider-selects {
+  position: absolute;
+  top: 340px;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  width: 75px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider-select-btn {
+  display: block;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-select-btn_current {
+  background-color: #000000;
+}
+
 /* ___favourites___ */
 
 .favourites {
