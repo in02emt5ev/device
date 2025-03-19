@@ -315,6 +315,8 @@ body {
 /* ___slider___ */
 
 .slider {
+  position: relative;
+
   background-image: linear-gradient(#ffe17f 24%, #ffffff 24%);
 }
 
@@ -378,6 +380,33 @@ body {
   font-size: 36px;
   line-height: 30px;
   color: #000000;
+}
+
+.slider-arrows {
+  position: absolute;
+  top: 175px;
+  left: 30px;
+
+  display: flex;
+  justify-content: space-between;
+  width: 530px;
+}
+
+.slider-arrow {
+  display: block;
+  box-sizing: border-box;
+  width: 20px;
+  height: 60px;
+  padding: 0;
+
+  background: none;
+  background-image: url("../img/slider/slider-arrow.svg");
+  border: 0;
+  cursor: pointer;
+}
+
+.slider-arrow_next {
+  transform: rotate(180deg);
 }
 
 /* ___favourites___ */
