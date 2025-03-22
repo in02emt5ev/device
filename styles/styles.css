@@ -127,6 +127,10 @@ body {
   min-width: 220px;
 }
 
+.btn_filter-submit {
+  width: 100%;
+}
+
 /* ___page-nav___ */
 
 .page-nav {
@@ -993,8 +997,10 @@ body {
 }
 
 .filters {
-  width: 200px;
+  width: 220px;
   padding: 0 60px;
+  padding-top: 27px;
+  padding-right: 40px;
 }
 
 .catalog-right-column {
@@ -1015,6 +1021,38 @@ body {
   letter-spacing: 0.2em;
 }
 
+.filters__title {
+  margin-bottom: 60px;
+}
+
+.filter-group {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+}
+
+.filter-form__group {
+  margin-bottom: 35px;
+}
+
+.filter-group__title {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  padding-top: 12px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  letter-spacing: -0.02em;
+
+  border-top: 2px solid #000000;
+}
+
 .filter-list {
   display: flex;
   flex-direction: column;
@@ -1027,14 +1065,6 @@ body {
 
 .filter-list li:not(:last-child) {
   margin-bottom: 20px;
-}
-
-.group-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  color: #000000;
-  letter-spacing: -0.02em;
 }
 
 .radio,
