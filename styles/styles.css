@@ -1058,11 +1058,32 @@ body {
 
 .orders {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 60px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.order-btn {
+  display: block;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  background-color: #f0f0f0;
+  background-image: url("../img/sort-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  opacity: 0.2;
+}
+
+.order-btn_desc {
+  transform: rotate(180deg);
 }
 
 /* ___products___ */
