@@ -1110,12 +1110,6 @@ body {
   padding-left: 36px;
 }
 
-.check__input {
-  position: absolute;
-
-  appearance: none;
-}
-
 .check__box {
   content: "";
   position: absolute;
@@ -1140,12 +1134,6 @@ body {
   position: relative;
 
   padding-left: 36px;
-}
-
-.radio__input {
-  position: absolute;
-
-  appearance: none;
 }
 
 .radio__button {
