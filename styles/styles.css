@@ -1015,11 +1015,18 @@ body {
   letter-spacing: 0.2em;
 }
 
-.filter-group ul {
+.filter-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.filter-list li:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .group-title {
