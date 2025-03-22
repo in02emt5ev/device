@@ -1130,6 +1130,11 @@ body {
   background-image: url("../img/check_radio/check-checked.svg");
 }
 
+.check__input:focus + .check__box {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 .radio {
   position: relative;
 
@@ -1154,6 +1159,11 @@ body {
 
 .radio__input:checked + .radio__button {
   background-image: url("../img/check_radio/radio-checked.svg");
+}
+
+.radio__input:focus + .radio__button {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 /* ___sorting___ */
