@@ -145,6 +145,21 @@ body {
   display: block;
   width: 145px;
   height: 36px;
+
+  cursor: pointer;
+}
+
+.logo:hover {
+  opacity: 0.6;
+}
+
+.logo:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.logo:active {
+  opacity: 0.3;
 }
 
 .logo__image {
