@@ -1001,6 +1001,19 @@ body {
   text-decoration: none;
 }
 
+.breadcrumb:hover {
+  opacity: 0.6;
+}
+
+.breadcrumb:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.breadcrumb:active {
+  opacity: 0.3;
+}
+
 /* ___filters___ */
 
 .catalog-wrapper {
