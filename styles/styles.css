@@ -1045,6 +1045,71 @@ body {
   color: #000000;
 }
 
+.check {
+  position: relative;
+
+  display: block;
+  padding-left: 36px;
+}
+
+.check__input {
+  position: absolute;
+
+  appearance: none;
+}
+
+.check__box {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+
+  background-image: url("../img/check_radio/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.check__input:checked + .check__box {
+  background-image: url("../img/check_radio/check-checked.svg");
+}
+
+.radio {
+  position: relative;
+
+  padding-left: 36px;
+}
+
+.radio__input {
+  position: absolute;
+
+  appearance: none;
+}
+
+.radio__button {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+
+  background-image: url("../img/check_radio/radio.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.radio__input:checked + .radio__button {
+  background-image: url("../img/check_radio/radio-checked.svg");
+}
+
 /* ___sorting___ */
 
 .sorting {
