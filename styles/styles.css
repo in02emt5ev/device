@@ -1119,9 +1119,39 @@ body {
   padding: 20px 40px;
 }
 
+.select-control-wrapper {
+  position: relative;
+}
+
 .select-control {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+
   font: inherit;
   color: #000000;
+
+  background: none;
+  border: 0;
+
+  appearance: none;
+}
+
+.select-control-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: block;
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../img/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  pointer-events: none;
 }
 
 .sorting-form {
