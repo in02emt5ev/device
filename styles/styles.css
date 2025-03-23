@@ -621,9 +621,24 @@ body {
 }
 
 .services-panel {
-  padding-top: 72px;
+  padding-top: 75px;
   padding-bottom: 72px;
   padding-left: 116px;
+
+  background-repeat: no-repeat;
+}
+
+.services-panel_delivery {
+  background-image: url("../img/delivery.svg");
+  background-position: center right 63px;
+}
+.services-panel_warranty {
+  background-image: url("../img/warranty.svg");
+  background-position: center right 30px;
+}
+.services-panel_credit {
+  background-image: url("../img/credit.svg");
+  background-position: center right 30px;
 }
 
 .services-panel__title {
