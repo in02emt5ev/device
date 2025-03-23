@@ -762,7 +762,7 @@ body {
   background-color: #dcdcdc;
   background-image: url("../img/info-icon.svg");
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: center;
   border-radius: 50%;
   opacity: 0.5;
 }
