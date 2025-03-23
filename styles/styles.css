@@ -373,7 +373,7 @@ body {
 .slider {
   position: relative;
 
-  background-image: linear-gradient(#ffe17f 24%, #ffffff 24%);
+  background-image: linear-gradient(#ffe17f 115px, #ffffff 115px);
 }
 
 .slides {
@@ -384,13 +384,37 @@ body {
 }
 
 .slide {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+
+  padding-top: 85px;
+  padding-left: 600px;
+}
+
+.slide::before {
+  content: "01";
+  position: absolute;
+  top: 45px;
+  right: 50px;
+
+  display: block;
+
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  font-family: "Rubik", "Arial", "Helvetica", sans-serif;
+  text-align: right;
+  color: #ffffff;
+}
+
+.slide__image {
+  position: absolute;
+  top: -35px;
+  left: 0;
 }
 
 .slide-content-wrapper {
-  width: 560px;
-  padding-top: 108px;
+  position: relative;
+  z-index: 1;
 }
 
 .slide__slogan {
@@ -431,7 +455,7 @@ body {
 .props dd {
   order: -1;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   font-size: 36px;
   line-height: 30px;
