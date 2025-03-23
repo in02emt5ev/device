@@ -321,6 +321,7 @@ body {
   background-image: url("../img/sub_button.svg");
   background-repeat: no-repeat;
   background-position: 50%;
+  opacity: 0.3;
 }
 
 .nav-link_footer {
@@ -338,6 +339,16 @@ body {
 
 .nav-link:active {
   opacity: 0.3;
+}
+
+.nav-link_sub:hover,
+.nav-link_sub:hover::after {
+  opacity: 1;
+}
+
+.nav-link_sub:active,
+.nav-link_sub:active::after {
+  opacity: 1;
 }
 
 .sub-link {
