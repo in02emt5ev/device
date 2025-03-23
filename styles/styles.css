@@ -522,8 +522,8 @@ body {
 /* ___favourites___ */
 
 .favourites {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 110px;
+  padding-bottom: 80px;
 }
 
 .favourites-list {
@@ -559,7 +559,7 @@ body {
 
   background-color: #ffe17f;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: center;
 }
 
 .category_vr::before {
@@ -568,6 +568,7 @@ body {
 
 .category_selfie::before {
   background-image: url("../img/selfie.svg");
+  background-position: center bottom;
 }
 
 .category_cameras::before {
