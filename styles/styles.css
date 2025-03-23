@@ -1212,22 +1212,12 @@ body {
   padding: 20px 40px;
 }
 
-.select-control-wrapper {
-  position: relative;
+.sorting-form {
+  width: 160px;
 }
 
-.select-control {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 0;
-
-  font: inherit;
-  color: #000000;
-
-  background: none;
-  border: 0;
-
-  appearance: none;
+.select-control-wrapper {
+  position: relative;
 }
 
 .select-control-wrapper::after {
@@ -1247,8 +1237,32 @@ body {
   pointer-events: none;
 }
 
-.sorting-form {
-  width: 160px;
+.select-control {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+
+  font: inherit;
+  color: #000000;
+
+  background: none;
+  border: 0;
+  outline: none;
+
+  appearance: none;
+}
+
+.select-control-wrapper:hover {
+  opacity: 0.6;
+}
+
+.select-control-wrapper:focus-within {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.select-control-wrapper:active {
+  opacity: 0.3;
 }
 
 .orders {
