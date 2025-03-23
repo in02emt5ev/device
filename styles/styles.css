@@ -1277,22 +1277,50 @@ body {
 }
 
 .order-btn {
+  position: relative;
+
   display: block;
   box-sizing: border-box;
   width: 30px;
   height: 30px;
   padding: 0;
 
-  background-color: #f0f0f0;
+  background-color: transparent;
+  border: 0;
+}
+
+.order-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 11px;
+  height: 10px;
+
   background-image: url("../img/sort-button.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border: 0;
+  transform: translateX(-50%) translateY(-50%);
   opacity: 0.2;
 }
 
 .order-btn_desc {
   transform: rotate(180deg);
+}
+
+.order-btn:hover {
+  opacity: 0.6;
+}
+
+.order-btn:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.order-btn:active {
+  opacity: 0.3;
 }
 
 /* ___products___ */
