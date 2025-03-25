@@ -779,12 +779,6 @@ body {
   border: 0;
 }
 
-.services-tab_current {
-  position: static;
-
-  color: #ffe17f;
-}
-
 .services-tab::before {
   content: "";
   position: absolute;
@@ -800,10 +794,38 @@ body {
   transform: translateY(-50%);
 }
 
+.services-tab:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.services-tab_current {
+  position: static;
+
+  color: #ffe17f;
+}
+
 .services-tab_current::before {
   height: 100%;
 
   background-color: #000000;
+}
+
+.services-tab_current:hover {
+  color: rgba(255, 225, 127, 0.5);
+}
+
+.services-tab_current:focus {
+  outline: none;
+}
+
+.services-tabs li:has(.services-tab_current:focus) {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.services-tab_current:active {
+  color: rgba(255, 225, 127, 0.3);
 }
 
 /* ___delivery-link___ */
