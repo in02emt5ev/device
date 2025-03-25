@@ -1317,6 +1317,10 @@ body {
   opacity: 0.3;
 }
 
+.select-control-wrapper:has(:disabled) {
+  opacity: 0.1;
+}
+
 .orders {
   display: flex;
   justify-content: space-between;
