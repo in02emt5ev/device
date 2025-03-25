@@ -912,7 +912,7 @@ body {
   margin-bottom: 30px;
 }
 
-.delivery-list {
+.about__list {
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
@@ -925,8 +925,29 @@ body {
   letter-spacing: -0.02em;
 }
 
-.delivery-list li:not(:last-child) {
-  margin-bottom: 20px;
+.about__list li {
+  position: relative;
+
+  padding-left: 35px;
+}
+
+.about__list li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 3px;
+
+  display: block;
+  width: 8px;
+  height: 8px;
+
+  background-color: #ffc700;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.about__list li:not(:last-child) {
+  margin-bottom: 18px;
 }
 
 /* ___contacts___ */
