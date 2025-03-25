@@ -536,10 +536,24 @@ body {
   transform: rotate(180deg);
 }
 
+.slider-arrow:hover {
+  opacity: 0.6;
+}
+
+.slider-arrow:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.slider-arrow:active {
+  opacity: 0.3;
+}
+
 .slider-selects {
   position: absolute;
   top: 340px;
   right: 0;
+  z-index: 1;
 
   display: flex;
   justify-content: space-between;
@@ -551,6 +565,8 @@ body {
 }
 
 .slider-select-btn {
+  position: relative;
+
   display: block;
   width: 12px;
   height: 12px;
@@ -559,11 +575,36 @@ body {
   background-color: #ffffff;
   border: 2px solid #000000;
   border-radius: 50%;
+  outline: none;
   cursor: pointer;
 }
 
 .slider-select-btn_current {
   background-color: #000000;
+}
+
+.slider-select-btn:hover {
+  opacity: 0.6;
+}
+
+.slider-select-btn:focus::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: transparent;
+  outline: 2px solid #af4fff;
+  outline-offset: 4px;
+
+  pointer-events: none;
+}
+
+.slider-select-btn:active {
+  opacity: 0.3;
 }
 
 /* ___favourites___ */
