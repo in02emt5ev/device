@@ -675,6 +675,19 @@ body {
   background-image: url("../img/quadrocopters.svg");
 }
 
+.category:hover::before {
+  background-color: #ffc700;
+}
+
+.category:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.category:active {
+  opacity: 0.3;
+}
+
 /* ___services___ */
 
 .services {
