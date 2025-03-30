@@ -61,6 +61,8 @@ body {
   clip: rect(0 0 0 0);
 }
 
+/* Можно добавить в page-container border-box и не плодить лишние классы и обёртки */
+
 .page-container {
   width: 1160px;
   margin: 0 auto;
@@ -118,6 +120,8 @@ body {
   background-color: #ffe17f;
   transform: translateY(-50%);
 }
+
+/*Есть смысл вынести стили для табов в отдельный модификатор и не дублировать код*/
 
 .btn_about {
   min-width: 230px;
