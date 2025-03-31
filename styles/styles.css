@@ -1008,34 +1008,31 @@ body {
 }
 
 .mailing-layout {
-  display: grid;
-  grid-template-columns: repeat(6, 160px);
-  row-gap: 145px;
-
-  column-gap: 40px;
+  display: flex;
+  row-gap: 143px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .mailing__title {
-  grid-column: 1 / 4;
   width: 350px;
 }
 
 .mailing__description {
-  grid-column: 4 / -1;
-  width: 560px;
+  width: 552px;
   margin: 0;
 }
 
 .mailing-form {
   display: grid;
   grid-template-columns: 1fr 253px;
-  grid-column: 1 / 6;
   width: 810px;
 }
 
 .mailing-field {
   margin: 0;
-  padding: 10px 15px;
+  padding: 11px 15px;
 
   font: inherit;
   font: inherit;
@@ -1066,8 +1063,12 @@ body {
 }
 
 .mailing__note {
-  grid-column: 6 / 7;
   margin: 0;
+  padding-left: 34px;
+
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
 }
 
 /* ___page-footer___ */
