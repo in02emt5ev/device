@@ -903,8 +903,23 @@ body {
 /* ___about___ */
 
 .about {
+  position: relative;
+
   width: 520px;
   padding-top: 47px;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 84px;
+  height: 7px;
+
+  background-color: #000000;
 }
 
 .about__title {
@@ -957,8 +972,23 @@ body {
 /* ___contacts___ */
 
 .contacts {
+  position: relative;
+
   width: 532px;
   padding-top: 48px;
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 84px;
+  height: 7px;
+
+  background-color: #000000;
 }
 
 .contacts__title {
