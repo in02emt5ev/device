@@ -1118,9 +1118,9 @@ body {
 
 .page-footer__middle {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 45px;
+  ;
 }
 
 .page-footer__address {
@@ -1149,8 +1149,8 @@ body {
 }
 
 .page-footer__social {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
 }
 
@@ -1167,8 +1167,9 @@ body {
 .social {
   display: flex;
   flex-wrap: wrap;
+  justify-self: center;
   width: 150px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -1176,7 +1177,6 @@ body {
 
 .social li {
   margin-right: 15px;
-  margin-bottom: 5px;
 }
 
 .social li:nth-child(3n) {
@@ -1210,6 +1210,7 @@ body {
 
 .credit {
   display: block;
+  justify-self: end;
   width: 115px;
   height: 33px;
 }
