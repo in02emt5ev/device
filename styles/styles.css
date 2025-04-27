@@ -114,6 +114,8 @@ body {
 
   background-color: #ffe17f;
   transform: translateY(-50%);
+
+  transition: transform 0.2s;
 }
 
 /*Есть смысл вынести стили для табов в отдельный модификатор и не дублировать код*/
@@ -128,6 +130,18 @@ body {
 
 .btn_filter-submit {
   width: 100%;
+}
+
+.btn:hover::before {
+  transform: translateY(-50%) scaleY(5);
+}
+
+.btn:focus {
+  outline: 2px solid #af4fff;
+}
+
+.btn:active::before {
+  background-color: #ffcc33;
 }
 
 /* ___page-nav___ */
