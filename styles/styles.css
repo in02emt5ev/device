@@ -806,23 +806,28 @@ body {
 
   background-color: #ffe17f;
   transform: translateY(-50%);
+
+  transition: transform 0.2s;
+}
+
+.services-tab:hover::before {
+  transform: translateY(-50%) scaleY(5);
 }
 
 .services-tab:focus {
   outline: 2px solid #af4fff;
-  outline-offset: 2px;
+}
+
+.services-tab:active:before {
+  background-color: #ffc500;
 }
 
 .services-tab_current {
-  position: static;
-
   color: #ffe17f;
 }
 
 .services-tab_current::before {
-  height: 100%;
-
-  background-color: #000000;
+  display: none;
 }
 
 .services-tab_current:hover {
@@ -831,6 +836,10 @@ body {
 
 .services-tab_current:focus {
   outline: none;
+}
+
+.services-tabs li:has(.services-tab_current) {
+  background-color: #000000;
 }
 
 .services-tabs li:has(.services-tab_current:focus) {
