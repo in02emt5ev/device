@@ -61,9 +61,8 @@ body {
   clip: rect(0 0 0 0);
 }
 
-/* Можно добавить в page-container border-box и не плодить лишние классы и обёртки */
-
 .page-container {
+  box-sizing: border-box;
   width: 1160px;
   margin: 0 auto;
   padding: 0;
@@ -138,7 +137,6 @@ body {
 /* ___page-nav___ */
 
 .page-nav {
-  width: 1040px;
   margin: 0 auto;
   padding: 17px 60px 23px;
 
