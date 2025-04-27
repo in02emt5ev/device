@@ -108,20 +108,24 @@
                 <legend class="filter-group__title">Стоимость</legend>
 
                 <div class="range">
-                  <div class="range-bar">
-                    <button class="range-button range-button_min" type="button">
-                      <span class="visually-hidden">Минимальная цена</span>
-                    </button>
-                    <button class="range-button range-button_max" type="button">
-                      <span class="visually-hidden">Максимальная цена</span>
-                    </button>
+                  <div class="range-scale">
+                    <div class="range-bar">
+                      <button class="range-button range-button_min" type="button">
+                        <span class="visually-hidden">Минимальная цена</span>
+                      </button>
+                      <button class="range-button range-button_max" type="button">
+                        <span class="visually-hidden">Максимальная цена</span>
+                      </button>
+                    </div>
                   </div>
-                  <label class="range-price">
-                    от <input type="number" name="min-price">
-                  </label>
-                  <label class="range-price">
-                    до <input type="number" name="max-price">
-                  </label>
+                  <div class="range-wrapper-inputs">
+                    <label class="range-price">
+                      от <input type="number" name="min-price" placeholder="0">
+                    </label>
+                    <label class="range-price">
+                      до <input type="number" name="max-price" placeholder="5000">
+                    </label>
+                  </div>
                 </div>
               </fieldset>
               <fieldset class="filter-group filter-form__group">
