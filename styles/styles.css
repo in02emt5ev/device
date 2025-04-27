@@ -1642,7 +1642,7 @@ body {
   transform: rotate(180deg);
 }
 
-.order-btn:hover {
+.order-btn:hover::before {
   opacity: 0.6;
 }
 
@@ -1651,7 +1651,7 @@ body {
   outline-offset: 2px;
 }
 
-.order-btn:active {
+.order-btn:active::before {
   opacity: 0.3;
 }
 
