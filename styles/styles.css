@@ -68,10 +68,6 @@ body {
   padding: 0;
 }
 
-.page-container_catalog {
-  width: 1040px;
-}
-
 .title {
   display: block;
   margin: 0;
@@ -1225,8 +1221,13 @@ body {
   padding-top: 35px;
 }
 
+.page-heading {
+  margin-bottom: 30px;
+  padding: 0 60px;
+}
+
 .page-catalog__title {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .breadcrumbs {
@@ -1242,11 +1243,7 @@ body {
 
   background-image: url("../img/breadcrumbs-arrow.svg");
   background-repeat: no-repeat;
-  background-position: center right 16px;
-}
-
-.page-catalog__bread {
-  margin-bottom: 35px;
+  background-position: center right 13px;
 }
 
 .breadcrumb {
