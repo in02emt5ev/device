@@ -306,7 +306,7 @@ body {
 }
 
 .menu-link_logout {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .menu-link__icon {
