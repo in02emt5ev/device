@@ -1176,6 +1176,22 @@ body {
   cursor: pointer;
 }
 
+.mailing-submit:hover {
+  color: #ffffff;
+
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.mailing-submit:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.mailing-submit:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .mailing__note {
   margin: 0;
   padding-left: 34px;
