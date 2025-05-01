@@ -1088,6 +1088,19 @@ body {
   color: inherit;
 }
 
+.phone-link:hover {
+  opacity: 0.6;
+}
+
+.phone-link:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.phone-link:active {
+  opacity: 0.3;
+}
+
 /* ___mailing___ */
 
 .mailing {
