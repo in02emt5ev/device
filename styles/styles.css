@@ -1329,6 +1329,18 @@ body {
   height: 33px;
 }
 
+.credit:hover path {
+  fill: #ffffff;
+}
+
+.credit:focus {
+  outline: 2px solid #af4fff;
+}
+
+.credit:active {
+  opacity: 0.3;
+}
+
 /* ___catalog___ */
 
 .page-catalog {
