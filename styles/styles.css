@@ -1721,9 +1721,17 @@ body {
   background-image: url("../img/check_radio/check-checked.svg");
 }
 
+.check:hover {
+  opacity: 0.6;
+}
+
 .check__input:focus + .check__box {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+}
+
+.check:active {
+  opacity: 0.3;
 }
 
 .radio {
@@ -1752,9 +1760,17 @@ body {
   background-image: url("../img/check_radio/radio-checked.svg");
 }
 
+.radio:hover {
+  opacity: 0.6;
+}
+
 .radio__input:focus + .radio__button {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+}
+
+.radio:active {
+  opacity: 0.3;
 }
 
 /* ___sorting___ */
