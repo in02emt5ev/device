@@ -1213,10 +1213,25 @@ body {
 }
 
 .page-footer__phone {
+  align-self: flex-start;
+
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
   color: inherit;
+}
+
+.page-footer__phone:hover {
+  color: #ffc700;
+}
+
+.page-footer__phone:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.page-footer__phone:active {
+  opacity: 0.3;
 }
 
 .page-footer__social {
