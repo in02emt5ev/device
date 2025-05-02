@@ -2021,10 +2021,24 @@ body {
 
   background-color: #ffffff;
   border: 3px solid #e5e5e5;
+  cursor: pointer;
 }
 
 .products__more {
   margin-bottom: 44px;
+}
+
+.more-btn:hover {
+  border-color: #000000;
+}
+
+.more-btn:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.more-btn:active {
+  opacity: 0.3;
 }
 
 /* ___pagination___ */
