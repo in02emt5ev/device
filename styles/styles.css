@@ -352,18 +352,20 @@ body {
 }
 
 .nav-menu > li:not(:last-child) {
-  margin-right: 45px;
+  margin-right: 50px;
 }
 
 .nav-menu > li:first-child {
   position: relative;
 
-  width: 293px;
+  width: 290px;
   margin-right: auto;
 }
 
 .nav-link {
   position: relative;
+
+  margin-right: -0.2em;
 
   font-weight: 800;
   font-family: "Raleway", "Arial", "Helvetica", sans-serif;
@@ -1074,7 +1076,7 @@ body {
 }
 
 .about__title {
-  margin-bottom: 48px;
+  margin-bottom: 45px;
 }
 
 .about p {
@@ -1084,7 +1086,7 @@ body {
 
 .about__list {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   padding: 0;
 
   list-style: none;
@@ -1143,7 +1145,7 @@ body {
 }
 
 .contacts__title {
-  margin-bottom: 48px;
+  margin-bottom: 45px;
 }
 
 .contacts__description,
@@ -1196,17 +1198,17 @@ body {
 
 .mailing {
   padding-top: 65px;
-  padding-bottom: 55px;
+  padding-bottom: 57px;
 
   background-color: #f0f0f0;
 }
 
 .mailing-layout {
   display: flex;
-  row-gap: 143px;
+  row-gap: 145px;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .mailing__title {
@@ -1284,6 +1286,7 @@ body {
 }
 
 .mailing__note {
+  align-self: center;
   margin: 0;
   padding-left: 34px;
 
@@ -1295,7 +1298,7 @@ body {
 /* ___page-footer___ */
 
 .page-footer {
-  padding-top: 65px;
+  padding-top: 62px;
   padding-bottom: 65px;
 
   color: #ffffff;
@@ -1304,12 +1307,13 @@ body {
 }
 
 .page-footer__logo {
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .page-footer__middle {
   display: flex;
-  margin-bottom: 45px;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
 .page-footer__address {
@@ -1324,7 +1328,7 @@ body {
 .footer-nav {
   display: flex;
   justify-content: space-between;
-  width: 448px;
+  width: 444px;
   margin: 0;
   margin-right: auto;
   padding: 0;
@@ -1333,8 +1337,6 @@ body {
 }
 
 .page-footer__phone {
-  align-self: flex-start;
-
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
