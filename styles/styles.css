@@ -2052,7 +2052,7 @@ body {
 
   list-style: none;
 
-  background-color: #f0f0f0;
+  background-color: #ebebeb;
 }
 
 .pagination-item:first-child {
@@ -2078,6 +2078,22 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
+
+  background-color: #ebebeb;
+}
+
+.pagination-btn:hover {
+  background-color: #dcdcdc;
+}
+
+.pagination-btn:focus {
+  background-color: #f0f0f0;
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.pagination-btn:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .pagination-link {
