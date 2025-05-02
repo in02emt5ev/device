@@ -312,6 +312,8 @@ body {
 }
 
 .menu-link {
+  position: relative;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -326,6 +328,23 @@ body {
 
 .menu-link__icon {
   margin-right: 12px;
+}
+
+.menu-link__counter {
+  position: absolute;
+  top: 5px;
+  left: -15px;
+
+  display: block;
+  min-width: 21px;
+  height: 21px;
+
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+
+  background-color: #ffffff;
+  border-radius: 50%;
 }
 
 .menu-link:hover {
