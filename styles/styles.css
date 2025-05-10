@@ -132,6 +132,10 @@ body {
   width: 100%;
 }
 
+.btn_modal-submit {
+  min-width: 200px;
+}
+
 .btn:hover::before {
   transform: translateY(-50%) scaleY(5);
 }
@@ -2347,11 +2351,17 @@ body {
   background-color: rgba(240, 240, 240, 0.9);
 }
 
+.modal-container_close {
+  display: none;
+}
+
 .modal {
+  position: relative;
+
   box-sizing: border-box;
   width: 920px;
   margin: auto;
-  padding: 60px 70px;
+  padding: 62px 70px;
 
   background-color: #ffffff;
   border: 10px solid #000000;
@@ -2364,7 +2374,7 @@ body {
 .modal-form__user {
   display: grid;
   grid-template-columns: repeat(2, 360px);
-  margin-bottom: 42px;
+  margin-bottom: 62px;
 
   column-gap: 40px;
 }
@@ -2384,12 +2394,30 @@ body {
 }
 
 .modal-form__field label {
+  position: relative;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   font-family: "Rubik", sans-serif;
   color: #000000;
   letter-spacing: -0.02em;
+}
+
+.modal-form__field label[for="quantity"]::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 34px;
+
+  display: block;
+  width: 26px;
+  height: 26px;
+
+  background-image: url("../img/modal/amount-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
 }
 
 .modal-form__field input[type="text"],
@@ -2407,19 +2435,13 @@ body {
 }
 
 .modal-form__field input[name="name"] {
-  background-image: url("../img/modal-user.svg");
-  background-repeat: no-repeat;
-  background-position: center right 20px;
-}
-
-.modal-form__field input[name="name"] {
-  background-image: url("../img/modal-user.svg");
+  background-image: url("../img/modal/modal-user-icon.svg");
   background-repeat: no-repeat;
   background-position: center right 20px;
 }
 
 .modal-form__field input[name="email"] {
-  background-image: url("../img/mail-modal.svg");
+  background-image: url("../img/modal/mail-icon.svg");
   background-repeat: no-repeat;
   background-position: center right 20px;
 }
@@ -2446,8 +2468,25 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.modal-form__field input:not([type="number"]):hover {
+  background-color: #dcdcdc;
+}
+
+.modal-form__field input:not([type="number"]):focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.modal-form__field input:not([type="number"]):active {
+  background-color: #ebebeb;
+}
+
 .number-field {
   display: flex;
+}
+
+.number-field input {
+  outline: none;
 }
 
 .number-field__btn {
@@ -2464,9 +2503,26 @@ body {
 .number-field__btn_less {
   order: -1;
 
-  background-image: url("../img/modal-minus.svg");
+  background-image: url("../img/modal/modal-minus-icon.svg");
 }
 
 .number-field__btn_more {
-  background-image: url("../img/modal-plus.svg");
+  background-image: url("../img/modal/modal-plus-icon.svg");
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 74px;
+  right: 70px;
+
+  display: block;
+  width: 26px;
+  height: 26px;
+
+  background-color: #ffffff;
+  background-image: url("../img/modal/modal-close-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
 }
