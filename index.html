@@ -420,7 +420,11 @@
                 <input id="order" name="order" type="text" placeholder="В свободной форме">
               </div>
               <div class="modal-form__field">
-                <label for="quantity">Количество:</label>
+                <label for="quantity" tabindex="0">
+                  Количество:
+                  <span class="modal__tooltip">Постараемся найти, сколько нужно. Привезём сколько получится
+                    по требованиям к провозу багажа.</span>
+                </label>
                 <div class="number-field">
                   <input id="quantity" name="quantity" type="number" value="1">
                   <button class="number-field__btn number-field__btn_less" type="button">

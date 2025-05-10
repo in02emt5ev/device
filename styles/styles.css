@@ -2404,6 +2404,10 @@ body {
   letter-spacing: -0.02em;
 }
 
+.modal-form__field label[for="quantity"] {
+  outline: none;
+}
+
 .modal-form__field label[for="quantity"]::after {
   content: "";
   position: absolute;
@@ -2419,6 +2423,8 @@ body {
   background-position: center;
   border-radius: 50%;
 }
+
+
 
 .modal-form__field input[type="text"],
 .modal-form__field input[type="email"] {
@@ -2525,4 +2531,42 @@ body {
   background-position: center;
   border: none;
   cursor: pointer;
+}
+
+.modal__tooltip {
+  position: absolute;
+  top: 30px;
+  left: 0;
+
+  display: none;
+  width: 160px;
+  margin: 0;
+  padding: 20px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.modal__tooltip::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 59px;
+
+  display: block;
+  width: 14px;
+  height: 6px;
+
+  background-image: url("../img/popover-top.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-form__field label[for="quantity"]:hover .modal__tooltip,
+.modal-form__field label[for="quantity"]:focus .modal__tooltip {
+  display: block;
 }
