@@ -2387,11 +2387,18 @@ body {
   column-gap: 40px;
 }
 
+/* Переделать всё, что ниже */
+
+
+/* Выделить в отдельный блок */
+
 .modal-form__field {
   display: flex;
   gap: 14px;
   flex-direction: column;
 }
+
+/* Не использовать селекторы по тегам */
 
 .modal-form__field label {
   position: relative;
@@ -2424,8 +2431,6 @@ body {
   border-radius: 50%;
 }
 
-
-
 .modal-form__field input[type="text"],
 .modal-form__field input[type="email"] {
   box-sizing: border-box;
@@ -2441,6 +2446,8 @@ body {
 }
 
 .modal-form__field input[name="name"] {
+  position: relative;
+
   background-image: url("../img/modal/modal-user-icon.svg");
   background-repeat: no-repeat;
   background-position: center right 20px;
@@ -2478,7 +2485,7 @@ body {
   background-color: #dcdcdc;
 }
 
-.modal-form__field input:not([type="number"]):focus {
+.modal-form__field input:focus {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
@@ -2491,11 +2498,15 @@ body {
   display: flex;
 }
 
-.number-field input {
-  outline: none;
+.number-field input:focus {
+  position: relative;
+  z-index: 3;
 }
 
 .number-field__btn {
+  position: relative;
+  z-index: 1;
+
   box-sizing: border-box;
   width: 60px;
   padding: 30px;
@@ -2504,6 +2515,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+  cursor: pointer;
 }
 
 .number-field__btn_less {
@@ -2514,6 +2526,19 @@ body {
 
 .number-field__btn_more {
   background-image: url("../img/modal/modal-plus-icon.svg");
+}
+
+
+.number-field__btn:hover {
+  opacity: 0.6;
+}
+
+.number-field__btn:focus {
+  outline: 2px solid #af4fff;
+}
+
+.number-field__btn:active {
+  opacity: 0.3;
 }
 
 .modal__close-btn {
@@ -2533,10 +2558,24 @@ body {
   cursor: pointer;
 }
 
+.modal__close-btn:hover {
+  opacity: 0.6;
+}
+
+.modal__close-btn:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.modal__close-btn:active {
+  opacity: 0.3;
+}
+
 .modal__tooltip {
   position: absolute;
   top: 30px;
   left: 0;
+  z-index: 5;
 
   display: none;
   width: 160px;
