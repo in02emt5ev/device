@@ -2351,6 +2351,8 @@ body {
   background-color: rgba(240, 240, 240, 0.9);
 }
 
+/* Модальное окно */
+
 .modal-container_close {
   display: none;
 }
@@ -2370,7 +2372,6 @@ body {
 .modal__title {
   margin-bottom: 42px;
 }
-
 
 .modal__close-btn {
   position: absolute;
@@ -2418,18 +2419,13 @@ body {
   column-gap: 40px;
 }
 
-/* Переделать всё, что ниже */
-
-
-/* Выделить в отдельный блок */
-
 .modal-field {
+  position: relative;
+
   display: flex;
   gap: 14px;
   flex-direction: column;
 }
-
-/* Не использовать селекторы по тегам */
 
 .modal-field__label {
   font-weight: 700;
@@ -2482,6 +2478,20 @@ body {
   background-color: #ebebeb;
 }
 
+.modal-field__input:not(:placeholder-shown):invalid {
+  box-shadow: 0 0 0 2px #ff3d3d;
+}
+
+.modal-field:has(.modal-field__input_email:not(:placeholder-shown):invalid)::after {
+  content: "Забавный у вас адрес";
+  position: absolute;
+  top: 100%;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ff3d3d;
+}
+
 .quantity-selector {
   display: flex;
   gap: 14px;
@@ -2517,6 +2527,10 @@ body {
 
 .quantity-selector__controls {
   display: flex;
+}
+
+.quantity-selector__controls:has(.quantity-selector__input:not(:placeholder-shown):invalid) {
+  box-shadow: 0 0 0 2px #ff3d3d;
 }
 
 .quantity-selector__input {
