@@ -2371,175 +2371,6 @@ body {
   margin-bottom: 42px;
 }
 
-.modal-form__user {
-  display: grid;
-  grid-template-columns: repeat(2, 360px);
-  margin-bottom: 62px;
-
-  column-gap: 40px;
-}
-
-.modal-form__product {
-  display: grid;
-  grid-template-columns: 540px 180px;
-  margin-bottom: 42px;
-
-  column-gap: 40px;
-}
-
-/* Переделать всё, что ниже */
-
-
-/* Выделить в отдельный блок */
-
-.modal-form__field {
-  display: flex;
-  gap: 14px;
-  flex-direction: column;
-}
-
-/* Не использовать селекторы по тегам */
-
-.modal-form__field label {
-  position: relative;
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  font-family: "Rubik", sans-serif;
-  color: #000000;
-  letter-spacing: -0.02em;
-}
-
-.modal-form__field label[for="quantity"] {
-  outline: none;
-}
-
-.modal-form__field label[for="quantity"]::after {
-  content: "";
-  position: absolute;
-  top: -3px;
-  right: 34px;
-
-  display: block;
-  width: 26px;
-  height: 26px;
-
-  background-image: url("../img/modal/amount-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
-}
-
-.modal-form__field input[type="text"],
-.modal-form__field input[type="email"] {
-  box-sizing: border-box;
-  padding: 20px;
-  padding-right: 60px;
-
-  font: inherit;
-  font-size: 16px;
-  line-height: 20px;
-
-  background-color: #f0f0f0;
-  border: none;
-}
-
-.modal-form__field input[name="name"] {
-  position: relative;
-
-  background-image: url("../img/modal/modal-user-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center right 20px;
-}
-
-.modal-form__field input[name="email"] {
-  background-image: url("../img/modal/mail-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center right 20px;
-}
-
-.modal-form__field input[type="number"] {
-  box-sizing: border-box;
-  width: 60px;
-  height: 60px;
-  padding: 0;
-
-  font: inherit;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #000000;
-
-  background-color: #f0f0f0;
-  border: none;
-
-  appearance: textfield;
-}
-
-.modal-form__field input::placeholder {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.modal-form__field input:not([type="number"]):hover {
-  background-color: #dcdcdc;
-}
-
-.modal-form__field input:focus {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
-}
-
-.modal-form__field input:not([type="number"]):active {
-  background-color: #ebebeb;
-}
-
-.number-field {
-  display: flex;
-}
-
-.number-field input:focus {
-  position: relative;
-  z-index: 3;
-}
-
-.number-field__btn {
-  position: relative;
-  z-index: 1;
-
-  box-sizing: border-box;
-  width: 60px;
-  padding: 30px;
-
-  background-color: #f0f0f0;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-  cursor: pointer;
-}
-
-.number-field__btn_less {
-  order: -1;
-
-  background-image: url("../img/modal/modal-minus-icon.svg");
-}
-
-.number-field__btn_more {
-  background-image: url("../img/modal/modal-plus-icon.svg");
-}
-
-
-.number-field__btn:hover {
-  opacity: 0.6;
-}
-
-.number-field__btn:focus {
-  outline: 2px solid #af4fff;
-}
-
-.number-field__btn:active {
-  opacity: 0.3;
-}
 
 .modal__close-btn {
   position: absolute;
@@ -2568,6 +2399,196 @@ body {
 }
 
 .modal__close-btn:active {
+  opacity: 0.3;
+}
+
+.modal-form__user {
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  margin-bottom: 62px;
+
+  column-gap: 40px;
+}
+
+.modal-form__product {
+  display: grid;
+  grid-template-columns: 540px 180px;
+  margin-bottom: 42px;
+
+  column-gap: 40px;
+}
+
+/* Переделать всё, что ниже */
+
+
+/* Выделить в отдельный блок */
+
+.modal-field {
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+}
+
+/* Не использовать селекторы по тегам */
+
+.modal-field__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Rubik", sans-serif;
+  color: #000000;
+  letter-spacing: -0.02em;
+}
+
+.modal-field__input {
+  box-sizing: border-box;
+  padding: 20px;
+  padding-right: 60px;
+
+  font: inherit;
+  font-size: 16px;
+  line-height: 20px;
+
+  background-color: #f0f0f0;
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+  border: none;
+}
+
+.modal-field__input_name {
+  background-image: url("../img/modal/modal-user-icon.svg");
+}
+
+.modal-field__input_email {
+  background-image: url("../img/modal/mail-icon.svg");
+}
+
+.modal-field__input::placeholder {
+  color: #000000;
+
+  opacity: 0.3;
+}
+
+.modal-field__input:hover {
+  background-color: #dcdcdc;
+}
+
+.modal-field__input:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.modal-field__input:active {
+  background-color: #ebebeb;
+}
+
+.quantity-selector {
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+}
+
+.quantity-selector__label {
+  position: relative;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Rubik", sans-serif;
+  color: #000000;
+  letter-spacing: -0.02em;
+}
+
+.quantity-selector__label::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 34px;
+
+  display: block;
+  width: 26px;
+  height: 26px;
+
+  background-image: url("../img/modal/amount-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.quantity-selector__controls {
+  display: flex;
+}
+
+.quantity-selector__input {
+  position: relative;
+  z-index: 1;
+
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+
+  font: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+
+  background-color: #f0f0f0;
+  border: none;
+
+  appearance: textfield;
+}
+
+.quantity-selector__input:hover {
+  background-color: #dcdcdc;
+}
+
+.quantity-selector__input:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.quantity-selector__input:active {
+  background-color: #ebebeb;
+}
+
+.quantity-selector__btn {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 60px;
+  padding: 30px;
+
+  background-color: #f0f0f0;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+.quantity-selector__btn_less {
+  order: -1;
+
+  background-image: url("../img/modal/modal-minus-icon.svg");
+}
+
+.quantity-selector__btn_more {
+  background-image: url("../img/modal/modal-plus-icon.svg");
+}
+
+.quantity-selector__btn:hover {
+  opacity: 0.6;
+}
+
+.quantity-selector__btn:focus {
+  z-index: 2;
+
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.quantity-selector__btn:active {
   opacity: 0.3;
 }
 
