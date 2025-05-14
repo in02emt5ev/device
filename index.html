@@ -420,7 +420,9 @@
                 <input class="modal-field__input" name="order" type="text" placeholder="В свободной форме" required>
               </label>
               <div class="quantity-selector">
-                <label class="quantity-selector__label" for="quantity">Количество:</label>
+                <label class="quantity-selector__label" for="quantity" tabindex="0">Количество:</label>
+                <span class="quantity-tooltip">Постараемся найти, сколько нужно. Привезём сколько получится
+                  по требованиям к провозу багажа.</span>
                 <div class="quantity-selector__controls">
                   <input class="quantity-selector__input" id="quantity" type="number" name="quantity" value="1" required>
                   <button class="quantity-selector__btn quantity-selector__btn_less" type="button">

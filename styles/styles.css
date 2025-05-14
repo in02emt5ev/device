@@ -2498,6 +2498,8 @@ body {
 }
 
 .quantity-selector {
+  position: relative;
+
   display: flex;
   gap: 14px;
   flex-direction: column;
@@ -2512,6 +2514,8 @@ body {
   font-family: "Rubik", sans-serif;
   color: #000000;
   letter-spacing: -0.02em;
+
+  outline: none;
 }
 
 .quantity-selector__label::after {
@@ -2611,7 +2615,7 @@ body {
   opacity: 0.3;
 }
 
-.modal__tooltip {
+.quantity-tooltip {
   position: absolute;
   top: 30px;
   left: 0;
@@ -2630,7 +2634,7 @@ body {
   background-color: #000000;
 }
 
-.modal__tooltip::after {
+.quantity-tooltip::after {
   content: "";
   position: absolute;
   top: -5px;
@@ -2645,7 +2649,7 @@ body {
   background-position: center;
 }
 
-.modal-form__field label[for="quantity"]:hover .modal__tooltip,
-.modal-form__field label[for="quantity"]:focus .modal__tooltip {
+.quantity-selector__label:hover + .quantity-tooltip,
+.quantity-selector__label:focus + .quantity-tooltip {
   display: block;
 }
