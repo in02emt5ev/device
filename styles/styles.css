@@ -379,7 +379,11 @@ body {
 }
 
 .nav-menu > li:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 46px;
+}
+
+.nav-menu > li:last-child {
+  margin-right: -0.2em;
 }
 
 .nav-menu > li:first-child {
@@ -391,8 +395,6 @@ body {
 
 .nav-link {
   position: relative;
-
-  margin-right: -0.2em;
 
   font-weight: 800;
   font-family: "Raleway", "Arial", "Helvetica", sans-serif;
@@ -1361,6 +1363,10 @@ body {
   padding: 0;
 
   list-style: none;
+}
+
+.footer-nav li {
+  margin-right: -0.2em;
 }
 
 .page-footer__phone {
