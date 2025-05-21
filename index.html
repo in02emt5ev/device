@@ -12,7 +12,7 @@
         <a class="logo page-nav__logo">
           <img class="logo__image" src="img/logo.svg" alt="Логотип интернет магазина" width="145" height="36">
         </a>
-        <!-- Сделать обёртку более логичной, например page-nav__user -->
+
         <div class="user-wrapper">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
             <label class="search-field">
@@ -322,8 +322,10 @@
             распаковками, а также акции, спецпредложения и вот это вот всё.</p>
 
           <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="get">
-            <label class="visually-hidden" for="email">Поле для ввода почты</label>
-            <input class="mailing-field" name="email" type="email" id="email" placeholder="Ваш e-mail">
+            <label class="mailing-field">
+              <span class="visually-hidden">Поле для ввода почты</span>
+              <input class="mailing-field__input" name="email" type="email" id="email" placeholder="Ваш e-mail" required>
+            </label>
             <button class="mailing-submit" type="submit">Подписаться</button>
           </form>
 

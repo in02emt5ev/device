@@ -1261,6 +1261,11 @@ body {
 }
 
 .mailing-field {
+  display: flex;
+}
+
+.mailing-field__input {
+  flex-grow: 1;
   margin: 0;
   padding: 11px 15px;
 
@@ -1273,15 +1278,15 @@ body {
   outline: none;
 }
 
-.mailing-field::placeholder {
+.mailing-field__input::placeholder {
   opacity: 0.5;
 }
 
-.mailing-field:focus {
+.mailing-field__input:focus {
   background-color: #dcdcdc;
 }
 
-.mailing-field:invalid {
+.mailing-field__input:not(:placeholder-shown):invalid {
   border-bottom: 3px solid #ff3d3d;
 }
 
