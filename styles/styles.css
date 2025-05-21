@@ -2025,6 +2025,8 @@ body {
 
 .product__image {
   order: -1;
+  width: 360px;
+  height: 380px;
   margin-bottom: 33px;
 }
 
